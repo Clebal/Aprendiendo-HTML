@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+
+        <meta charset="utf-8">
+
+        <title>Aprendiendo HTML</title>
+
+        <meta name="author" content="Sukafe">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <!-- Estilos -->
+
+        <link rel="stylesheet" href="../css/style2.css">
+        <link rel="stylesheet" href="../css/basic.css">  
+
+        <!-- Iconos -->
+
+        <link rel="stylesheet" href="../css/font-awesome.css">
+
+        <!-- Slicknav -->
+
+        <link rel="stylesheet" href="menu/slicknav.css">
+                <script src="../jquery/modernizr.min.js"></script>
+
+
+    </head>
+
+    <body>
+
+        <header class="blue-background header">
+
+            <progress id="progress" value="40" max="100"></progress>
+
+            <div style="float: left; margin-left: 100px;">
+
+                <a href="16.html"><i class="fa fa-angle-left" style="font-size: 30px; margin-top: 8.5px; text-shadow: 0px 0px 1px black"></i></a>
+
+            </div>
+
+            <div style="float: right; margin-right: 100px;">
+
+                <a href="19.html"><i class="fa fa-angle-right" style="font-size: 30px; margin-top: 8.5px; text-shadow: 0px 0px 1px black"></i></a>
+
+            </div>
+
+            <div id="h">
+
+                <ul id="menu">
+
+                </ul>
+
+            </div>
+
+        </header>
+
+        <section>
+            
+            <div class="div-abajo">
+
+                <p style="font-size: 35px; text-align: center">&lt;video></p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>&lt;video> es una etiqueta que sirve para añadir videos :) Era obvio, ¿no? Vamos a ver de que va la cosa...</p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>La etiqueta &lt;video> es una etiqueta que bien dio mucho que hablar (y sigue) debido al dilema que tenían muchas empresas sobre el uso de los codec de video en diferentes navegadores. Por ahora los principales formatos son MP4 y Webm, los cuales se pueden reproducir en casi todos los navegadores, Safari en Windows no es capaz de reproducir ninguno de los dos :S</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>Empezaremos por lo básico añadiendo solo un formato de video:</p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>&lt;video width="640" height="360" src="video/video.mp4" autoplay controls preload>&lt;/video></p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>Voy a ir explicandolo poco a poco lo que aquí vemos: <br><br><br>
+
+                    -Iniciamos la etiqueta video, la cual se cierra, vereis después por qué. <br><br>
+                    -Indicamos las dimensiones del reproductor de video. <br><br>
+                    -Mediante src="" ponemos la ruta del video. <br><br>
+                    -<b>Autoplay</b> sirve para que el video se inicie al instante que se cargue la página.<br><br>
+                    -<b>Controls</b> sirve para que aparezcan los controles, como los de Youtube. <br><br>
+                    -<b>Preload</b> sirve para que se cargue una parte antes de darle a play, para así evitar los parones mientras se ve el video.
+
+                </p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>Pero claaaaro, ahora tenemos el problema de que en algún navegador no se viera solo con mp4, sino que necesitara mp4, entonces lo haríamos de la siguiente manera:</p>
+
+            </div>
+
+            <div class="blue-background">
+                <br>
+
+                <span class="icon" style="color: white; margin: 25px; font-size: 35px; display: inline;"><i style=" padding: 5px;" class="fa fa-exclamation-triangle"></i></span>
+
+                <p style="color: white; margin-left: 25px; margin-right: 25px;">Puede darse el hipotético caso en el que el navegador no soporte MP4, pero esto es poco común ya que en las ultimas versiones de los principales navegadores, Chrome, Firefox, Internet Explorer y Opera funciona perfectamente solo con MP4 (Safari en Windows no funciona ni con varios formatos)<br><br> </p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>&lt;video width="640" height="360" autoplay controls preload><br><br>
+
+                    &lt;source src="video/video.mp4" type="video/mp4"><br>
+                    &lt;source src="video/video.webm" type="video/webm"><br>
+                    &lt;source src="video/video.ogg" type="video/ogg">
+
+                    <br><br>
+                    &lt;/video></p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>Pero claaaaro, ahora tenemos el problema de que en algún navegador no se viera solo con mp4, sino que necesitara mp4, entonces lo haríamos de la siguiente manera:</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>Vamos a ir viendo poco a poco como funciona lo que acabo de escribir: <br><br><br>
+
+                    -Iniciamos la etiqueta video, la cual se cierra, ya sabeis por qué ;) <br><br>
+                    -Indicamos las dimensiones del reproductor de video. <br><br>
+                    -Ponemos las propiedades que tendrá el video, que se reproduzca automaticamente, etc. <br><br>
+                    -Entre &lt;video> y &lt;/video> ponemos la magia que hará funcionar la etiqueta video.<br><br>
+                    -Mediante la etiqueta source con los parametros src (para indicar donde se encuentra el archivo) y type (para indicar el tipo de formato) se utilizan para agregar cada formato de un mismo video.<br><br>
+                    -En este caso por ejemplo podeis ver que he añadido tres formatos, mp4, webm y ogg, y al final he cerrado la etiqueta video.
+                    <br><br><br>
+
+                    Pero que fácil ;)
+                </p>
+
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>Sigamos con más etiquetas avanzadas de HTML5!</p>
+
+            </div>
+
+            <div class="blue-background">
+
+                <a href="18.html" class="margin5"><img class="img-center" src="../img/flechaderecha.png" alt="" ></a>
+
+            </div>
+
+        </section>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script src="menu/jquery.slicknav.js"></script>
+        <script type="text/javascript">
+
+            $(document).ready(function(){
+
+                $("#menu").load( "menu.html", function() {
+                    $('#menu').slicknav({
+                        label : '',
+                        prependTo:'#h'
+                    });
+                });
+
+            });
+
+        </script>
+
+    </body>
+
+</html>

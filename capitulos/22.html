@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+
+        <meta charset="utf-8">
+
+        <title>Aprendiendo HTML</title>
+
+        <meta name="author" content="Sukafe">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <!-- Estilos -->
+
+        <link rel="stylesheet" href="../css/style2.css">
+        <link rel="stylesheet" href="../css/basic.css">  
+
+        <!-- Iconos -->
+
+        <link rel="stylesheet" href="../css/font-awesome.css">
+
+        <!-- Slicknav -->
+
+        <link rel="stylesheet" href="menu/slicknav.css">
+        <script src="../jquery/modernizr.min.js"></script>
+
+    </head>
+
+    <body>
+
+        <header class="blue-background header">
+
+            <progress id="progress" value="70" max="100"></progress>
+
+            <div style="float: left; margin-left: 100px;">
+
+                <a href="21.html"><i class="fa fa-angle-left" style="font-size: 30px; margin-top: 8.5px; text-shadow: 0px 0px 1px black"></i></a>
+
+            </div>
+
+            <div style="float: right; margin-right: 100px;">
+
+                <a href="23.html"><i class="fa fa-angle-right" style="font-size: 30px; margin-top: 8.5px; text-shadow: 0px 0px 1px black"></i></a>
+
+            </div>
+
+            <div id="h">
+
+                <ul id="menu">
+
+                </ul>
+
+            </div>
+
+        </header>
+
+        <section>
+
+            <div class="div-abajo">
+
+                <p>Antes de pasar a otros apartados más gordos que van a finalizar este curso, os quiero enseñar una etiqueta bastante interesante que les ayudará...</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p style="font-size: 35px; text-align: center">&lt;base></p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>Cuando tienes una web con muchas imagenes (por ejemplo, puede ser un enlace también) y estas están en la misma carpeta podemos utilizar este truco para no comernos la cabeza ;)</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>&lt;base> haciendo uso del atributo href="" define una base para todas las url que aparezcan, vamos con un ejemplo, peeeero antes espera que te diga una cosa, esta etiqueta no se pone dentro de la etiqueta &lt;body> sino dentro de la etiqueta &lt;head>, ahora sí, vamos con el ejemplo:</p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>
+
+                    &lt;head><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;base href="http://www.example.com/img/"><br>
+                    &lt;/head><br><br>
+
+                    &lt;body><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;img href="example.png" alt="Example"><br>
+                    &lt;/body>
+
+
+                </p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>Recordad que la etiqueta img debe llevar siempre siempre el atributo alt="" ;) <br><br> En el ejemplo de arriba podeis ver que dentro de la cabeza de nuestra página creamos una base para todos los atributos href y src. Así en la etiqueta &lt;img> cuando ponemos el atributo href indicando donde esta la imagen, no hace falta nada más que introducir el nombre de la foto y la extensión del archivo.</p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>Pero claro, ¿qué ocurre si tengo un enlace que me lleva a otra página? Lo que debemos hacer en ese caso es sencillamente indicar el http://www.sukafe.com, toda la URL completa, incluido http:// y el www, con esto el navegador ignorará en ese caso la etiqueta &lt;base></p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>Ahora vamos con algo más duro, que es...</p>
+
+            </div>
+
+            <div class="blue-background">
+
+                <a href="23.html" class="margin5"><img class="img-center" src="../img/flechaderecha.png" alt="" ></a>
+
+            </div>
+
+        </section>
+
+        <script src="../jquery/jquery.js"></script>
+        <script src="menu/jquery.slicknav.js"></script>
+        <script type="text/javascript">
+
+            $(document).ready(function(){
+
+                $("#menu").load( "menu.html", function() {
+                    $('#menu').slicknav({
+                        label : '',
+                        prependTo:'#h'
+                    });
+                });
+
+            });
+
+        </script>
+
+    </body>
+
+</html>

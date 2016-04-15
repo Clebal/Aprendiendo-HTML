@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+
+        <meta charset="utf-8">
+
+        <title>Aprendiendo HTML</title>
+
+        <meta name="author" content="Sukafe">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <!-- Estilos -->
+
+        <link rel="stylesheet" href="../css/style2.css">
+        <link rel="stylesheet" href="../css/basic.css">  
+
+        <!-- Iconos -->
+
+        <link rel="stylesheet" href="../css/font-awesome.css">
+
+        <!-- Slicknav -->
+
+        <link rel="stylesheet" href="menu/slicknav.css">
+        <script src="../jquery/modernizr.min.js"></script>
+
+    </head>
+
+    <body>
+
+        <header class="blue-background header">
+
+            <progress id="progress" value="30" max="100"></progress>
+
+            <div style="float: left; margin-left: 100px;">
+
+                <a href="14.html"><i class="fa fa-angle-left" style="font-size: 30px; margin-top: 8.5px; text-shadow: 0px 0px 1px black"></i></a>
+
+            </div>
+
+            <div style="float: right; margin-right: 100px;">
+
+                <a href="16.html"><i class="fa fa-angle-right" style="font-size: 30px; margin-top: 8.5px; text-shadow: 0px 0px 1px black"></i></a>
+
+            </div>
+
+            <div id="h">
+
+                <ul id="menu">
+
+                </ul>
+
+            </div>
+
+        </header>
+
+        <section>
+
+            <div class="blue-background">
+
+                <br>
+
+                <a href="css/texto.html"><p class="text-center" style="font-size: 25px;"><b>PROPIEDAD SORPRESA</b></p></a>
+                <br>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>&lt;section>, &lt;article>, &lt;aside>, son tres etiquetas que formarán la estructura principal de nuestra web. Estos contenedores contienen la parte con la que el usuario interactuará mayormente. Para que entendais cada etiqueta, usaré como ejemplo un blog. Este ejemplo es el más típico cuando se trata de hacer entender como funciona estas etiquetas.</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <img width="270px" height="200px" src="../img/section.png" alt="">
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>Espero que con esa imagen os hagais una idea de que va la cosa, pero para que lo entendais mejor vamos cada etiqueta en detalle :)</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p class="blue" style="font-size:18px;">&lt;section></p>
+
+                <br>
+
+                <p>La etiqueta &lt; engloba todo lo que es la mitad de blog. Esa parte entre el pie de página y el encabezado, comprendería el lateral en que se encuentra la columna donde se ponen los botones sociales para darle Like a la página o donde salen las vísitas de la web. También sería el artículo del blog, con los comentarios. Pero &lt;section> solo contiene esas cosas, que serían &lt;article> (el articulo del blog) y &lt;aside> (la columna lateral o también los comentarios). Ahora entraremos en más detalles.</p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p class="blue" style="font-size:18px;">&lt;article></p>
+
+                <br>
+
+                <p>En &lt;article> se engloba todo lo que viene siendo lo más importante del cuerpo de la web, en un blog sería el artículo que vamos a leer, lo cual es a lo que el usuario dirigirá sobre todo la mirada.</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p class="blue" style="font-size:18px;">&lt;aside></p>
+
+                <br>
+
+                <p>La etiqueta &lt;aside> contiene (como comentamos antes) aquellos contenidos de la página los cuales sean secundarios y no tengan relevancia, un buen ejemplo sería los banners de publicidad o los botones sociales entre otros :)</p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>Hemos visto la declaración <!DOCTYPE html>, la etiqueta html, head, meta, title, link, style, body, header, h1 a h6, img, p, a, ul, li, ol, section, article, aside, seguramente alguna etiqueta que se me olvide y algunas cosas de CSS3. Es bastante para empezar con bien pies, ahora vamos a ver la ultima etiqueta básica. Toda estructura tiene una cabeza (header), un cuerpo (nav, section, article, aside) y un... </p>
+
+            </div>
+
+            <div class="blue-background">
+
+                <a href="16.html" class="margin5"><img class="img-center" src="../img/flechaderecha.png" alt="" ></a>
+
+            </div>
+
+        </section>
+
+        <script src="../jquery/jquery.js"></script>
+        <script src="menu/jquery.slicknav.js"></script>
+        <script type="text/javascript">
+
+            $(document).ready(function(){
+
+                $("#menu").load( "menu.html", function() {
+                    $('#menu').slicknav({
+                        label : '',
+                        prependTo:'#h'
+                    });
+                });
+
+            });
+
+        </script>  
+
+    </body>
+
+</html>

@@ -1,0 +1,142 @@
+<script src="../jquery/modernizr.min.js"></script><!DOCTYPE html>
+<html lang="es">
+
+    <head>
+
+        <meta charset="utf-8">
+
+        <title>Aprendiendo HTML</title>
+
+        <meta name="author" content="Sukafe">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <!-- Estilos -->
+
+        <link rel="stylesheet" href="../css/style2.css">
+        <link rel="stylesheet" href="../css/basic.css">  
+
+        <!-- Iconos -->
+
+        <link rel="stylesheet" href="../css/font-awesome.css">
+
+        <!-- Slicknav -->
+
+        <link rel="stylesheet" href="menu/slicknav.css">
+        <script src="../jquery/modernizr.min.js"></script>
+
+    </head>
+
+    <body>
+
+        <header class="blue-background header">
+
+            <progress id="progress" value="40" max="100"></progress>
+
+            <div style="float: left; margin-left: 100px;">
+
+                <a href="17.html"><i class="fa fa-angle-left" style="font-size: 30px; margin-top: 8.5px; text-shadow: 0px 0px 1px black"></i></a>
+
+            </div>
+
+            <div style="float: right; margin-right: 100px;">
+
+                <a href="19.html"><i class="fa fa-angle-right" style="font-size: 30px; margin-top: 8.5px; text-shadow: 0px 0px 1px black"></i></a>
+
+            </div>
+
+            <div id="h">
+
+                <ul id="menu">
+
+                </ul>
+
+            </div>
+
+        </header>
+
+        <section>
+
+            <div class="div-abajo">
+
+                <p style="font-size: 35px; text-align: center">&lt;audio></p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>&lt;audio> es una etiqueta que sirve para añadir audios :) Entre video y audio, hoy es el día de las obviedades :) Veamos como funciona...</p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>&lt;audio src="audio/cancion.mp3" autoplay controls>&lt;/audio></p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>Como ven, la etiqueta es practicamente igual que &lt;video>. Esta vez hemos añadido solo el formato MP3 y le hemos puesto varios atributos, hay que decir que si usamos el atributo <b>autoplay</b> y <b>preload</b> en la misma etiqueta audio, se va a ignorar el preload, ya que al iniciar al instante el video, no habrá un preload antes de que comience como se busca con ese atributo :) Por eso en este caso solo ponemos autoplay.</p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>En principio el formato MP3 es muy usado en muchos navegadores, compatibilidad total en los principales navegadores, pero por si acaso, aquí les muestro como hacerlo :)</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>
+
+                    &lt;audio controls preload><br><br>
+                    &nbsp;&nbsp;&nbsp;&lt;source src="horse.ogg" type="audio/ogg"><br><br>
+                    &nbsp;&nbsp;&nbsp;&lt;source src="horse.mp3" type="audio/mpeg"><br><br>
+                    &nbsp;&nbsp;&nbsp;Tu navegador no es compatible con la etiqueta audio.<br><br>
+                    &lt;/audio><br><br>
+
+                </p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>Se me olvidó comentaros que en la etiqueta &lt;audio> o &lt;video> podemos poner un texto como el que veis arriba <i>"Tu navegador no es compatible con la etiqueta audio"</i> para que les aparezca a la personas que tengan un navegador no compatible.</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>Es muy sencillo como ya veis :) Venga, sigamos adelante a ver una nueva etiqueta ;)</p>
+
+            </div>
+
+            <div class="blue-background">
+
+                <a href="19.html" class="margin5"><img class="img-center" src="../img/flechaderecha.png" alt="" ></a>
+
+            </div>  
+
+        </section>
+
+        <script src="../jquery/jquery.js"></script>
+        <script src="menu/jquery.slicknav.js"></script>
+        <script type="text/javascript">
+
+            $(document).ready(function(){
+
+                $("#menu").load( "menu.html", function() {
+                    $('#menu').slicknav({
+                        label : '',
+                        prependTo:'#h'
+                    });
+                });
+
+            });
+
+        </script>
+
+    </body>
+
+</html>

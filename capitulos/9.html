@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+
+        <meta charset="utf-8">
+        <title>Aprendiendo HTML</title>
+        <meta name="description" content="">
+        <meta name="author" content="Sukafe">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <!-- Estilos -->
+
+        <link rel="stylesheet" href="../css/style2.css">
+        <link rel="stylesheet" href="../css/basic.css">  
+
+        <!-- Iconos -->
+
+        <link rel="stylesheet" href="../css/font-awesome.css">
+
+        <!-- Slicknav -->
+
+        <link rel="stylesheet" href="menu/slicknav.css">
+        <script src="../jquery/modernizr.min.js"></script>
+
+    </head>
+
+    <body>
+
+        <header class="blue-background header">
+
+            <progress id="progress" value="18" max="100"></progress>
+
+            <div style="float: left; margin-left: 100px;">
+
+                <a href="8.html"><i class="fa fa-angle-left" style="font-size: 30px; margin-top: 8.5px; text-shadow: 0px 0px 1px black"></i></a>
+
+            </div>
+
+            <div style="float: right; margin-right: 100px;">
+
+                <a href="10.html"><i class="fa fa-angle-right" style="font-size: 30px; margin-top: 8.5px; text-shadow: 0px 0px 1px black"></i></a>
+
+            </div>
+
+            <div id="h">
+
+                <ul id="menu">
+
+
+                </ul>
+
+            </div>
+
+        </header>
+
+        <section>
+
+            <div class="div-arriba">
+
+                <p>Esta etiqueta no tiene mucha explicación pues es muy sencilla y a la vez importante, no hay página que no tenga la etiqueta:</p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p style="font-size: 25px;" class="text-center">&lt;title></p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>Esta etiqueta contiene el titulo de nuestra web, ese que aparece arriba en las pestañas del navegador. En resumidas cuentas, lo que hace es definir un titulo al documento HTML que estamos escribiendo. Por lo tanto... SE CIERRA ;)</p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p style="font-size: 25px;" class="text-center">&lt;/title></p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>No hay mucho más que decir sobre la etiqueta &lt;title>, recordad que está dentro de la etiqueta &lt;head> y que define el titulo de la web, si saben eso ya puede considerar esto por aprendido.</p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>Ahora terminaremos las etiquetas que estan dentro de &lt;head> con &lt;link> y empezando CSS, el lenguaje de estilo que le dará el diseño a nuestra web. También en cuanto hayamos visto esas dos cositas, veremos como utilizar fuentes de letras de Google Fonts e implementarlas en nuestra web.</p>
+
+            </div>
+
+            <div class="blue-background">
+
+                <a href="10.html" class="margin2"><img class="img-center" src="../img/flechaderecha.png" alt="" ></a>
+
+            </div>
+
+        </section>
+
+        <script src="../jquery/jquery.js"></script>
+        <script src="menu/jquery.slicknav.js"></script>
+        <script type="text/javascript">
+
+            $(document).ready(function(){
+
+                $("#menu").load( "menu.html", function() {
+                    $('#menu').slicknav({
+                        label : '',
+                        prependTo:'#h'
+                    });
+                });
+
+            });
+
+        </script>
+
+    </body>
+
+</html>

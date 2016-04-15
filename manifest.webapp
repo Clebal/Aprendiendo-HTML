@@ -1,0 +1,19 @@
+{
+  "version": "1.0.3",
+  "name": "Aprendiendo HTML",
+  "description": "Con Aprendiendo HTML podras adentrarte en la programación HTML sin conocimiento de programación alguno. Con esta aplicación aprenderas la sintaxis básica de HTML y CSS, por lo que sabrás desenvolverte de forma básica a la hora de crear una web.",
+  "launch_path": "/index.html",
+  "icons": {
+    "32": "/img/icon32.png",
+    "60": "/img/icon60.png",
+    "90": "/img/icon90.png",
+    "120": "/img/icon120.png",
+    "128": "/img/icon128.png",
+    "256": "/img/icon256.png"
+  },
+  "developer": {
+    "name": "Sukafe",
+    "url": "http://www.sukafe.com/"
+  },
+  "default_locale": "es"
+}

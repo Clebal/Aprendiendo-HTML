@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+
+        <meta charset="utf-8">
+        <title>Aprendiendo HTML</title>
+        <meta name="description" content="">
+        <meta name="author" content="Sukafe">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <!-- Estilos -->
+
+        <link rel="stylesheet" href="../css/style2.css">
+        <link rel="stylesheet" href="../css/basic.css">  
+
+        <!-- Iconos -->
+
+        <link rel="stylesheet" href="../css/font-awesome.css">
+
+        <!-- Slicknav -->
+
+        <link rel="stylesheet" href="menu/slicknav.css">
+        <script src="../jquery/modernizr.min.js"></script>
+
+    </head>
+
+    <body>
+
+        <header class="blue-background header">
+
+            <progress id="progress" value="16" max="100"></progress>
+
+            <div style="float: left; margin-left: 100px;">
+
+                <a href="7.html"><i class="fa fa-angle-left" style="font-size: 30px; margin-top: 8.5px; text-shadow: 0px 0px 1px black"></i></a>
+
+            </div>
+
+            <div style="float: right; margin-right: 100px;">
+
+                <a href="9.html"><i class="fa fa-angle-right" style="font-size: 30px; margin-top: 8.5px; text-shadow: 0px 0px 1px black"></i></a>
+
+            </div>
+
+            <div id="h">
+
+                <ul id="menu">
+
+                </ul>
+
+            </div>
+
+        </header>
+
+        <section>
+
+            <div class="div-abajo">
+
+                <p>La etiqueta &lt;meta> tiene multiples utilidades y funciona mediante atributos, lo que quiere decir que nosotros le daremos la información en forma de atributos, por lo tanto no se cierra.</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>Para hacer más fácil la forma en la que aprendemos los meta (Muy coloquialmente dicho, y así lo llamaremos de ahora en adelante), lo dividiremos en tres categorias según para el atributo que usan. Empezaremos viendo la estructura de los meta charset </p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p style="font-size: 25px;" class="text-center">&lt;meta charset="valor"></p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>Antes de seguir con los otros dos tipos vamos a ver el charset. <br><br> Un meta charset indica la codificación de caracteres en nuestra página, de forma resumida, si reconocerá caracteres "raros" (Raros son las tildes por ejemplo)</p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>El valor puede ser: <br></p>
+
+                <ul>
+
+                    <li style="list-style:circle; margin: 15px;">UTF-8 (El más comun para caracteres raros)</li>
+                    <li style="list-style:circle; margin: 15px;">ISO-8859-1 (Caracteres de alfabeto latino)</li>
+
+                </ul>
+
+                <p>Hay muchos más valores que puede tomar, pero para el castellano podremos usar una de las dos opciones.</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>¿Qué alternativa hay si no utilizamos el meta charset? Para utilizar tildes pondremos lo primero y para poner la Ñ pondremos lo segundo:</p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p style="font-size: 27px;" class="text-center">&amp;(vocal)acute;</p>
+
+                <br>
+                <br>
+
+                <p style="font-size: 27px;" class="text-center">&amp;ntilde;</p>
+
+            </div>
+
+            <div class="blue-background">
+                <br>
+
+                <span class="icon" style="color: white; margin: 25px; font-size: 35px; display: inline;"><i style=" padding: 5px;" class="fa fa-exclamation-triangle"></i></span>
+
+                <p style="color: white; margin-left: 25px; margin-right: 25px;">Existen otros caracteres especiales que pueden usarse con &amp; + (serie de letras), si quieres ver una lista, pulsa abajo <br><br></p>
+
+                <a href="externo/caracteres.html"><p style="font-size: 27px;" class="text-center">Caracteres especiales</p></a>
+                <br>
+            </div>
+
+            <div class="div-arriba">
+
+                <p>La segunda categoría se llama, meta http-equiv, y tiene la siguiente estructura:</p>
+
+            </div>
+
+
+            <div class="div-abajo">
+
+                <p style="font-size: 25px;" class="text-center">&lt;meta http-equiv="valor" content="valor"</p>
+
+            </div>
+
+
+            <div class="div-arriba">
+
+                <p>Esta toma principalmente dos valores que seguramente utilizaremos al crear nuestra web, existen otros dos valores que ya no se usan pero que aclararemos más adelante. El primero de los dos es http-equiv="refresh":</p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p style="font-size: 25px;" class="text-center">&lt;meta http-equiv="refresh" content="30"</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>Indica cada cuanto tiempo se necesitara refrescar una página. Esto es algo muy tipico en páginas como Twitter en las que el contenido cambia por momentos, por lo que deberemos utilizar esta etiqueta. El atributo content="" indica cada cuantos segundos se recargará la página. <br><br> En caso de que pasados los 30 segundos quieras llevar al usuario a otra página deberas indicarlo mediante el atributo <b>URL="(dirección)"</b></p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>El segundo valor que puede tomar el atributo http-equiv es:</p>
+
+            </div>                
+
+            <div class="div-arriba">
+
+                <p style="font-size: 25px;" class="text-center">&lt;meta http-equiv="Default-Style" content="primero"</p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>Cuando tengamos varias hojas de estilo (que veremos más adelante como enlazarlas) deberemos indicar cual es de mayor importancia, a veces este atributo no es necesario, pero si tienes algún problema a la hora de compaginar varios estilos te será útil.</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>&lt;link rel="stylesheet" type="text/css" href="style.css" title="tercero"> <br><br>
+                    &lt;link rel="stylesheet" type="text/css" href="basic.css" title="segundo"> <br><br>
+                    &lt;link rel="stylesheet" type="text/css" href="estilos.css" title="primero"> <br><br> </p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>Tal vez no entiendas que pone ahí arriba, no importa, todo a su tiempo. Deberas fijarte en el atributo title="" el cual nos indica como llamaremos a cada uno de los estilos, para luego indicar en el http-equiv cual es la hoja de estilos que tiene prioridad frente a las demas.</p>
+
+            </div>
+
+            <div class="blue-background">
+                <br>
+
+                <span class="icon" style="color: white; margin: 25px; font-size: 35px; display: inline;"><i style=" padding: 5px;" class="fa fa-exclamation-triangle"></i></span>
+
+                <p style="color: white; margin-left: 25px; margin-right: 25px;">Los otros dos valores que podia tener http-equiv se utilizan en otras etiquetas y por lo tanto no es necesario que utilicemos los meta. Los dos valores eran para indicar el idioma y para la codificación de caracteres, cosa que ya hemos visto antes.</p>
+
+                <br>
+            </div>
+
+            <div class="div-arriba">
+
+                <p>La tercera categoria y ultima categoría es la más importante que deberas aprender para poder dar notoriedad a tu web en los buscadores y demas. Esta es la llamado meta name:</p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p style="font-size: 25px;" class="text-center">&lt;meta name="valor" content="valor"></p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>El meta name puede tomar 5 valores, no quiero hacer esta página muy larga por lo que podras ver detenidamente cada uno de estos 5 valores pulsando aquí abajo:</p>
+
+            </div>
+
+            <div class="blue-background">
+                <br>
+                <a href="externo/metaname.html"><p style="font-size: 27px;" class="text-center">Los valores de name</p></a>
+                <br>
+            </div>
+
+            </div>
+
+        <div class="div-abajo">
+
+            <p>Ya te sabes la etiqueta &lt;meta> estupendamente, sabes utilizarla y las tres categorias en las que las hemos dividido, ahora queda darle un titulo a nuestra web y enlazar las hojas de estilo.</p>
+
+        </div>
+
+        <div class="blue-background">
+
+            <a href="9.html" class="margin2"><img class="img-center" src="../img/flechaderecha.png" alt="" ></a>
+
+        </div>
+
+        </section>
+
+    <script src="../jquery/jquery.js"></script>
+    <script src="menu/jquery.slicknav.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+
+            $("#menu").load( "menu.html", function() {
+                $('#menu').slicknav({
+                    label : '',
+                    prependTo:'#h'
+                });
+            });
+
+        });
+
+    </script>
+
+    </body>
+
+</html>

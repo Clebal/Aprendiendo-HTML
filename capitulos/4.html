@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+
+        <meta charset="utf-8">
+        <title>Aprendiendo HTML</title>
+        <meta name="description" content="">
+        <meta name="author" content="Sukafe">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <!-- Estilos -->
+
+        <link rel="stylesheet" href="../css/style2.css">
+        <link rel="stylesheet" href="../css/basic.css">  
+
+        <!-- Iconos -->
+
+        <link rel="stylesheet" href="../css/font-awesome.css">
+
+        <!-- Slicknav -->
+
+        <link rel="stylesheet" href="menu/slicknav.css">
+        <script src="../jquery/modernizr.min.js"></script>
+
+    </head>
+
+    <body>
+
+        <header class="blue-background header">
+
+            <progress id="progress" value="5" max="100"></progress>
+
+            <div style="float: left; margin-left: 100px;">
+
+                <a href="3.html"><i class="fa fa-angle-left" style="font-size: 30px; margin-top: 8.5px; text-shadow: 0px 0px 1px black"></i></a>
+
+            </div>
+
+            <div style="float: right; margin-right: 100px;">
+
+                <a href="5.html"><i class="fa fa-angle-right" style="font-size: 30px; margin-top: 8.5px; text-shadow: 0px 0px 1px black"></i></a>
+
+            </div>
+
+            <div id="h">
+
+                <ul id="menu">
+                    
+                </ul>
+
+            </div>
+
+        </header>
+
+        <section>
+
+            <div class="div-abajo">
+
+                <p>Este es un apartado bastante largo, por ello no se asusten con tanta materia. Para empezar vamos a hablar sobre...</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p style="color: #0093d5; font-size: 30px;" class="text-center"><b>La historia de HTML</b></p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>En <b>1991</b> un cientifico de computación llamado <b>Sir Timothy John Berners-Lee</b>, para sus amigos Tim, publicó un documento llamado <b>HTML Tags</b> en Internet, que es considerado la primera descripción pública de dicho lenguaje. </p>
+
+                <img width="200" height="260" class="img-center" style="margin-top: 25px; box-shadow: 0px 0px 5px #000;" src="../img/TimBerners-Lee.jpg" alt="Tim Berners-Lee">
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>En tal documento se describian <b>22 elementos básicos</b> basados en SGML. <b>SGML</b> es del lenguaje que partieron otros lenguanjes de marcado como HTML o XML, y de este último también partio XHTML</p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>Todas las versiones de HTML menos HTML5 estan basadas en SGML. Nosotros vamos a trabajar con HTML5, por lo que iremos viendo algunas diferencia para que puedas diferenciar entre HTML 4.01 (La ultima versión basada en SGML) y HTML5</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>Todo empezó con <b>HTML</b> en <b>1991</b>, luego le siguio <b>HTML</b>+ en <b>1993</b>, dos años más tarde <b>HTML 2.0</b>, y cada dos años se iba renovando, saliendo en <b>1995</b>, <b>HTML3.2</b> y la ultima cada dos años que fue <b>HTML 4.01</b>. A partir de ahi se paró y doce años mas tarde se creo el borrador de <b>HTML5</b> en <b>2012</b>. Esta última versión no es un estandar y se cree que estara listo para 2014, este proyecto de evolución para HTML5 trabajan muchas empresas como Google, Microsoft o incluso Apple.</p>
+
+            </div>
+            <!--
+<div class="div-abajo">
+
+<p>Si quieres profundizar en alguna de las versiones de HTML para conocer su historia, pulsa cualquiera de las opciones de abajo</p>
+
+</div>
+
+<div class="div-arriba text-center">
+
+<a href="5.html" class="blue" style="font-size: 15px;">HTML+</a>
+<a href="5.html" style="font-size: 14px;">&nbsp;HTML 2.0</a>
+<a href="5.html" class="blue" style="font-size: 15px;">&nbsp;HTML 3.2</a>
+<a href="5.html" style="font-size: 14px;">&nbsp;HTML 4.01</a>
+
+</div>
+-->
+            <div class="div-abajo">
+
+                <p>Antes he comentado las versiones y los años, pero cuando hablamos de la historia de HTML lo correcto sería dividir esta historia en cuatro partes según la organización que la regulaba.</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p class="blue" style="font-size:18px;">CERN</p>
+
+                <br>
+
+                <p><b>Tim Berners-Lee</b>, creador de la web, decidio crear un sistema de hipertexto para poder compartir información entre los cientificos a traves de Internet, por ello en 1991 se publicó HTML Tags. 22 etiquetas que había no eran gran cosa, no servian para hacer efectos grandiosos ni webs alucinantes, pues para lo que estaba destinado era para mandar información y documentos cientificos a traves de Internet, porque la etiquetas que se publicaron eran de poner texto en negrita, subrayarlo y por el estilo. Con los años la web y HTML tuvieron un exito grandisimo en todo el mundo, por lo que empezó una necesidad mayor que poner el texto en negrita.</p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p class="blue" style="font-size:18px;">IETF</p>
+
+                <br>
+
+                <p>En 1993, <b>IETF</b> publicó un borrador llamado HTML a la vez que surgía otro borrador llamado HTML+. Este último incluía las tablas y los elementos multimedias entre sus caracteristicas. Tanto el borrador HTML y como el HTML+ no llegaron a ningun lado y la cosa no llegó a cuajar, por lo que la IETF creó un grupo llamado <b>HTML Working Group</b> para que definiera lo que sería la verdadera especificación 2.0 de HTML, y al igual que pasó con los borradores HTML y HTML+, a la vez que 2.0 se usaba se propuso HTML 3.0 el cual no fue usado popularmente por la gran acogida que tuvo HTML 2.0.</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p class="blue" style="font-size:18px;">W3C</p>
+
+                <br>
+
+                <p>En <b>1994</b>, Tim Beners-Lee vuelve a escena creando la <b>World Wide Web Cosortium</b> (W3C), en aquellos años las empresas luchaban por influenciar de alguna forma u otra en HTML, ya que al crear etiquetas propias usarian sus navegadores. Esta guerra fue en entre Internet Explorer de Microsoft y Netscape de Netscape Communications, lo cual llego a tal punto que muchos desarrolladores tuvieron que crear dos versiones de sus webs, una para Internet Explorer y otra para Netscape ya que cada navegador se inventaba sus propias etiquetas HTML. Toda esta guerra acabó con la creación de la W3C con la cual llegó HTML 3.2 en Enero de 1997, la cual fue la primera definición redactada totalmente por dicho consorcio. Entonces la IETF dejó de influir y la W3C cogió el mando.</p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p class="blue" style="font-size:18px;">HTML4: El estandar</p>
+
+                <br>
+
+                <p>HTML4 es por decirlo así lo más actual que no tenemos estandar, el 18 de Diciembre de 1997 se hacía publico un documento que empezaba a hablar sobre HTML4, el que sería la especificación de HTML4 que tenía como objetivo su uso universal, por lo tanto ser un estandar. HTML4 nació con tres variantes: </p>
+
+                <br><br>
+
+                <ul>
+                    <li style="list-style:circle;"><b>Transicional</b>: Es una variación que permitia utilizar etiquetas que ya estaban obsoletas.</li>
+                    <li style="list-style:circle;"><b>Estricta</b>: No se pueden usar los elementos obsoletos.</li>
+                    <li style="list-style:circle;"><b>Conjunto de Marcos</b>: Eran  para las webs que estaban hechas por frames.</li>
+                </ul>
+
+                <br>
+
+                <p>Unos años mas tardes se definio HTML 4.01, en 1999. La cual es una versión de HTML4 que corregía algunas erratas y añadía alguna que otra especificiación para llevar a HTML camino hacia el estandar internacional. En el año 2000 se creó la normativa ISO que definió a HTML 4.01 (Strict) como el estandar internacional.
+                </p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p class="text-center">Tal vez estes ya algo cansado de tanta historia y te preguntes como el navegador podía saber si era HTML4 Estricta o HTML3 o incluso la más actual HTML5, esto es lo que veremos en la siguiente página.</p>
+
+            </div>
+
+            <div class="blue-background">
+
+                <a href="5.html" class="margin2"><img class="img-center" src="../img/flechaderecha.png" alt="" ></a>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>Si  quieres seguir aprendiendo la historia de HTML sigue leyendo, ¡ya queda poco!</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p class="blue" style="font-size:18px;">HTML5: W3C y WHATWG</p>
+
+                <br>
+
+                <p>Por decirlo así, la <b>W3C</b> empezó a descuidar un poco a HTML para dedicarse a XHTML, la variación de HTML que surgió de XML. Entonces empezaron a surguir las <b>webs con Flash</b> que permitian hacer páginas que no eran posibles sin su uso, pero Flash era de pago por lo que iba totalmente en contra de la filosofia inicial de HTML, por lo que en <b>2004</b> se creó un grupo llamado <b>WHATWG</b>, agarrense para ver lo que significa, la <b>Web Hypertext Application Technology Working Group</b>. Este grupo con un nombre digno de un trabalenguas se propuso crear una nueva especificación de HTML que consiguiera con creces lo que Flash hacía. </p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>Dentro de la W3C dejo de existir un grupo dedicado a HTML porque pensaron que la gente se pasaría a XHTML, pero fue un fracaso totalmente, la gente seguía con HTML 4.01. Pero como comenté antes, esta especificación se empezó a quedar chica y la WHATWG empezó a desarrollar <b>Web Applicacitons 1.0</b> que se bautizaria más tarde como <b>HTML5</b>. <br><br> Tim Berners-Lee anunció a finales de 2006 la creación de un nuevo grupo de trabajo en HTML y la reestructuración de los ya existentes para empezar a trabajar con los progresos del grupo WHATWG. En Marzo del año siguiente se creó tal grupo en la W3C y empezó a trabajar codo con codo. Tiempo después empezaron las diferencias ya que la W3C decidio que ellos cada cierto tiempo publicarian nuevas recomendaciones (HTML5.1, HTML5.2, etc) pero WHATWG tenía una visión distinta y era que solo hubiera una versión de HTML y que se fuera modificando continuamente. <br> <br> La W3C ha creado un plan de trabajo que marca como fecha el año en el que se publicaran las nuevas versiones, seran en <b>2014 - HTML5</b>, en <b>2016 - HTML5.1</b> y en <b>2015</b> se iniciará el desarrollo de <b>HTML 5.2</b></p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p class="text-center">Ahora que ya eres un profesional puedes hacer nuestro test para ver si de verdad te has enterado ;)</p>
+
+            </div>       
+
+            <div class="blue-background">
+
+                <a href="ejercicios/ejercicio-historia.html" class="margin2"><img class="img-center" src="../img/flechaderecha.png" alt="" ></a>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p class="text-center">O puedes seguir ya que en la siguiente página vamos a ver como decirle al navegador que versión de HTML usaremos</p>
+
+            </div>
+
+            <div class="blue-background">
+
+                <a href="5.html" class="margin2"><img class="img-center" src="../img/flechaderecha.png" alt=""></a>
+
+            </div>
+
+        </section>
+
+        <script src="../jquery/jquery.js"></script>
+        <script src="menu/jquery.slicknav.js"></script>
+        <script type="text/javascript">
+
+            $(document).ready(function(){
+
+                $("#menu").load( "menu.html", function() {
+                    $('#menu').slicknav({
+                        label : '',
+                        prependTo:'#h'
+                    });
+                });
+
+            });
+
+        </script>
+
+    </body>
+
+</html>

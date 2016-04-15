@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+
+        <meta charset="utf-8">
+        <title>Aprendiendo HTML</title>
+        <meta name="description" content="">
+        <meta name="author" content="Sukafe">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <!-- Estilos -->
+
+        <link rel="stylesheet" href="../css/style2.css">
+        <link rel="stylesheet" href="../css/basic.css">  
+
+        <!-- Iconos -->
+
+        <link rel="stylesheet" href="../css/font-awesome.css">
+
+        <!-- Slicknav -->
+
+        <link rel="stylesheet" href="menu/slicknav.css">
+        <script src="../jquery/modernizr.min.js"></script>
+
+        <!-- Cuestionario -->
+
+        <script>
+
+            <!--Ocultar código
+
+            var pregunta1 = "0"; 
+
+            function respuesta1(valor) 
+            {pregunta1 = valor};             
+            // -->
+
+        </script>
+
+    </head>
+
+    <body>
+
+        <header class="blue-background header">
+
+            <progress id="progress" value="22" max="100"></progress>
+
+            <div style="float: left; margin-left: 100px;">
+
+                <a href="10.html"><i class="fa fa-angle-left" style="font-size: 30px; margin-top: 8.5px; text-shadow: 0px 0px 1px black"></i></a>
+
+            </div>
+
+            <div style="float: right; margin-right: 100px;">
+
+                <a href="12.html"><i class="fa fa-angle-right" style="font-size: 30px; margin-top: 8.5px; text-shadow: 0px 0px 1px black"></i></a>
+
+            </div>
+
+            <div id="h">
+
+                <ul id="menu">
+                    
+                </ul>
+
+            </div>
+
+        </header>
+
+        <section>
+
+            <div class="div-abajo">
+
+                <p>Ahora empiezan las lecciones de CSS, y para empezar vamos a ver un poco como funciona y como se enlaza con HTML5.</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p style="color: #0093d5; font-size: 27px;" class="text-center">CSS3 &amp; HTML5</p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>CSS es un lenguaje de hojas de estilos que se usa para describir como se presentaran las etiquetas que escribamos, lo que quiere decir que le dará estilo a nuestra web.</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>Así se vería esta misma página sin CSS:</p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <img width="200" height="260" class="img-center" style="margin-top: 25px; box-shadow: 0px 0px 5px #000;" src="../img/with.PNG" alt="Tim Berners-Lee">
+
+                <img width="180" height="210" class="img-center" style="margin-top: 25px; box-shadow: 0px 0px 5px #000;" src="../img/without.PNG" alt="Tim Berners-Lee">
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>La diferencia es bastante grande entre un página con HTML5 y CSS3, con otra que no tiene CSS3. <br><br> A nuestra web podemos añadir estilos de tres formas distintas:</p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p class="blue" style="font-size:18px;">&lt;link></p>
+
+                <br>
+
+                <p>La etiqueta &lt;link> ya la dimos en la página anterior por lo que aquí solo haremos un pequeño repaso. <br><br> Recordemos que la etiquta &lt;link> se utiliza para enlazar un archivo externo con nuestro documento, en este caso enlazaremos el archivo .css con el .html. Esta primera opción para añadir estilos a HTML es mediante un archivo externo, esta es para mi la mejor opción convinada con la tercera.</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p class="blue" style="font-size:18px;">&lt;style></p>
+
+                <br>
+
+                <p>Esta etiqueta (Que por supuesto se cierra) define un documento .css en el mismo documento .html. Esto es bueno salvo por el pequeño detalle de que si vamos a escribir un .css muy largo y un .html muy largo, si todo lo unimos en la misma página se hará enorme y más dificil a la hora de buscar fallos en el codigo. La etiqueta &lt;style> está...</p>
+
+            </div>
+
+            <form name="cuestionario">
+
+                <div class="div-abajo">
+
+                    <p>¿Donde se encuentra la etiqueta &lt;style>?</p><br>
+
+                    <input type="radio" name="pregunta1" value="A" onclick="respuesta1('A')">&nbsp;A. &lt;css><br>
+                    <input type="radio" name="pregunta1" value="B" onclick="respuesta1('B')">&nbsp;B. &lt;body><br> 
+                    <input type="radio" name="pregunta1" value="C" onclick="respuesta1('C')">&nbsp;C. &lt;head><br> 
+                    <br>    
+                    <div class="text-center margintop-2 marginbottom-2">
+
+                        <input class="div-center btn caja" type="button" style="font-size: 17px;" onclick="examinar()" value="Comprobar">
+
+                    </div>
+
+
+                </div>
+
+                <script>
+                    <!--Ocultar código
+                    function examinar() 
+                    { 
+                        puntuacion=0; 
+                        nocontesta=0; 
+                        contestadas=0; 
+                        puntosmaximos=0;
+
+                        if(pregunta1!= "0" )
+                        {
+                            contestadas=contestadas+1
+                            puntosmaximos=puntosmaximos+100
+                            if(pregunta1 == "A") {puntuacion=puntuacion+0}
+                            if(pregunta1 == "B") {puntuacion=puntuacion+0}
+                            if(pregunta1 == "C") {puntuacion=puntuacion+100}
+                        }
+                        else {nocontesta=nocontesta+1}
+
+                        if(puntuacion==100) 
+                        {
+                            mensaje="¡Acertaste!"} 
+
+                        if(puntuacion==0)
+                        {    
+                            mensaje="¡Fallaste!"} 
+
+                        if(contestadas==0)
+                        {
+                            mensaje="Contesta anda..."}
+
+                        alert(mensaje)
+
+
+                    }
+                    // -->
+                </script>
+            </form>
+
+
+            <div class="div-arriba">
+
+                <p class="blue" style="font-size:18px;">Atributo style=""</p>
+
+                <br>
+
+                <p>Con el atributo style="", que pondremos en cada etiqueta, podemos añadir estilos directamente en la etiqueta sin necesidad de enlazar los elementos de HTML con los estilos del CSS con ID y Class</p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>¿ID y Class? Tal vez no te suenen, ni sepas lo que son, para saberlo solo debes pasar página.</p>
+
+            </div>
+
+            <div class="blue-background">
+
+                <a href="12.html" class="margin2"><img class="img-center" src="../img/flechaderecha.png" alt="" ></a>
+
+            </div>  
+
+        </section>
+
+        <script src="../jquery/jquery.js"></script>
+        <script src="menu/jquery.slicknav.js"></script>
+        <script type="text/javascript">
+
+            $(document).ready(function(){
+
+                $("#menu").load( "menu.html", function() {
+                    $('#menu').slicknav({
+                        label : '',
+                        prependTo:'#h'
+                    });
+                });
+
+            });
+
+        </script>
+
+    </body>
+
+</html>

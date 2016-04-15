@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+
+        <meta charset="utf-8">
+
+        <title>Aprendiendo HTML</title>
+
+        <meta name="author" content="Sukafe">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <!-- Estilos -->
+
+        <link rel="stylesheet" href="../css/style2.css">
+        <link rel="stylesheet" href="../css/basic.css">  
+
+        <!-- Iconos -->
+
+        <link rel="stylesheet" href="../css/font-awesome.css">
+
+        <!-- Slicknav -->
+
+        <link rel="stylesheet" href="menu/slicknav.css"> 
+        <script src="../jquery/modernizr.min.js"></script>
+        
+    </head>
+
+    <body>
+
+        <header class="blue-background header">
+
+            <progress id="progress" value="35" max="100"></progress>
+
+            <div style="float: left; margin-left: 100px;">
+
+                <a href="15.html"><i class="fa fa-angle-left" style="font-size: 30px; margin-top: 8.5px; text-shadow: 0px 0px 1px black"></i></a>
+
+            </div>
+
+            <div style="float: right; margin-right: 100px;">
+
+                <a href="17.html"><i class="fa fa-angle-right" style="font-size: 30px; margin-top: 8.5px; text-shadow: 0px 0px 1px black"></i></a>
+
+            </div>
+
+            <div id="h">
+
+                <ul id="menu">
+
+                </ul>
+
+            </div>
+
+        </header>
+
+        <section>
+
+            <div class="blue-background">
+
+                <br>
+
+                <a href="css/centrando.html"><p class="text-center" style="font-size: 25px;"><b>PROPIEDAD SORPRESA</b></p></a>
+                <br>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p style="font-size: 35px; text-align: center">&lt;footer></p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>Me da un poco de pena que esta sea la ultima página de etiquetas basicas que vamos a ver, seguramente puede que algunos abandonen el curso porque no les haya gustado o puede que haya otros que hayan descubierto en HTML lo que les gusta. Terminamos con footer :)</p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <br>
+
+                <p>Todo cuerpo acaba con un pie, un pie de página en este caso. Es bien sencillo, seguro que en Google han visto abajo del tonto que hay un rectangulo gris que pone Publicidad, Empresa, Acerca de, etc. Ese rectangulo es el footer, en Español llamado Pie de Página, en el cual podemos poner enlaces sobre la empresa, declaraciones de Copyright, fuentes, usos de temas, etc.</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>Usualmente dentro del &lt;footer> usamos la etiqueta &lt;small>, el cual pone el texto pequeño de forma que destaque menos pero que este ahí.</p>
+
+            </div>
+
+            <div class="div-abajo text-center">
+
+                <small>¿Veis? Esto no ha sido tanto ;) Aprendiendo HTML es una app de Sukafe, 2014</small>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>En las siguientes páginas entraremos en etiquetas sueltas, sin seguir una concordancia como hasta ahora donde hemos visto de arriba a abajo un código básico HTML. También seguiremos viendo CSS, ademas veremos como crear una app para Firefox OS y como enviarla a la Firefox Marketplace</p>
+
+            </div>
+
+
+            <div class="blue-background">
+
+                <a href="17.html" class="margin5"><img class="img-center" src="../img/flechaderecha.png" alt="" ></a>
+
+            </div>
+
+        </section>
+
+        <script src="../jquery/jquery.js"></script>
+        <script src="menu/jquery.slicknav.js"></script>
+        <script type="text/javascript">
+
+            $(document).ready(function(){
+
+                $("#menu").load( "menu.html", function() {
+                    $('#menu').slicknav({
+                        label : '',
+                        prependTo:'#h'
+                    });
+                });
+
+            });
+
+        </script>
+
+    </body>
+
+</html>

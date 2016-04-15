@@ -1,0 +1,11 @@
+@font-face{
+    
+    font-family: 'FiraSans';
+    src: url('../fonts/FiraSans/FiraSansOT-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/FiraSans/FiraSansOT-Light-webfont.woff') format('woff'),
+         url('../fonts/FiraSans/FiraSansOT-Light-webfont.ttf') format('truetype'),
+         url('../fonts/FiraSans/FiraSansOT-Light-webfont.svg#fira_sans_otlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

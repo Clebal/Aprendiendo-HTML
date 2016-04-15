@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+
+        <meta charset="utf-8">
+        <title>Aprendiendo HTML</title>
+        <meta name="description" content="">
+        <meta name="author" content="Sukafe">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <!-- Estilos -->
+
+        <link rel="stylesheet" href="../css/style2.css">
+        <link rel="stylesheet" href="../css/basic.css">  
+
+        <!-- Iconos -->
+
+        <link rel="stylesheet" href="../css/font-awesome.css">
+
+        <!-- Slicknav -->
+
+        <link rel="stylesheet" href="menu/slicknav.css">
+        <script src="../jquery/modernizr.min.js"></script>
+
+    </head>
+
+    <body>
+
+        <header class="blue-background header">
+
+            <progress id="progress" value="26" max="100"></progress>
+
+            <div style="float: left; margin-left: 100px;">
+
+                <a href="12.html"><i class="fa fa-angle-left" style="font-size: 30px; margin-top: 8.5px; text-shadow: 0px 0px 1px black"></i></a>
+
+            </div>
+
+            <div style="float: right; margin-right: 100px;">
+
+                <a href="14.html"><i class="fa fa-angle-right" style="font-size: 30px; margin-top: 8.5px; text-shadow: 0px 0px 1px black"></i></a>
+
+            </div>
+
+            <div id="h">
+
+                <ul id="menu">
+
+                </ul>
+
+            </div>
+
+        </header>
+
+        <section>
+            <div class="blue-background">
+                <br>
+                <a href="css/background.html"><p class="text-center" style="font-size: 25px;"><b>PROPIEDAD SORPRESA</b></p></a>
+                <br>
+            </div>
+
+            <div class="div-arriba">
+
+                <p>Lo habré dicho mil veces, y creo que por una más no pasará nada. Nuestra web está dividida en la parte no visible que es todo lo que contiene &lt;head> y la parte visible que es &lt;body></p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>Dentro de la etiqueta &lt;body> que funciona como contenedor (que por supuesto y sin duda alguna debes de decir: ¡SE CIERRA!), dentro de esta etiqueta vamos a diferenciar 6 partes que formarán la estructura básica de nuestra web, empezando por...</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p class="text-center" style="font-size:30px;">&lt;header></p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>La etiqueta &lt;header> en otro contenedor en el que se encuentra el logo, el titulo de la web que aparece arriba de la página y otras cosas que se nos pudieran ocurrir meter dentro del &lt;header>, pero como es evidente, no vamos a meter el artículo de un blog en el header, ya que este contenedor es el encabezado, y eso poco tiene que ver con el articulo, si podemos poner dentro de un artículo el &lt;header> pero eso ya lo veremos más adelante</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>Dentro de &lt;header> podemos poner la imagen de un logo o podemos poner el titulo de nuestra web como hemos dicho antes, para ello aprenderemos 7 nuevas etiquetas, la &lt;img> y las etiquetas de titulos que van desde &lt;h1> hasta &lt;h6> (Pasando por h2, h3, etc)</p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p class="blue" style="font-size:18px;">&lt;img></p>
+
+                <br>
+
+                <p>Esto es una de las cosas que más nos gusta poner en las webs, para utilizar la etiqueta &lt;img> se hace uso de dos atributos que la autocompletan, por lo que no es necesario cerrar la etiqueta con &lt;/img>. <br><br>Estos dos atributos son <b>src=""</b> que define el lugar donde se encuentra la imagen (normalmente metemos la imagenes en la carpeta img o utilizamos una URL) y el atributo <b>alt=""</b>, que sirve para mostrar un texto alternativo en caso de que la imagen no se encuentre y mostrar un texto cuando se posa el ratón encima (Creo que esta segunda ya está mas generalizada, cuando antes solo lo hacía Internet Explorer) <br><br> Un ejemplo de estructura sería:<br><br>
+
+                    &lt;img class="imgPrincipal" src="img/foto.png" alt="Imagen principal de la web"></p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p class="blue" style="font-size:18px;">&lt;h1> a &lt;h6></p>
+
+                <br>
+
+                <p>&lt;h1> a &lt;h6> son 6 etiquetas con un tamaño de letras predefinida por el navegador que nos ahorra tiempo y espacio en el archivo .css a la hora de definir titulos, subtitulos, y otros usos. Basicamente y como deberas de suponer &lt;h1> es el tamaño de letra más grande que según se recomienda solo debe estar dentro del &lt;header> como titulo de la web que el buscador tomará como una palabra clave en futuras busquedas, por lo que se recomienda solo utilizar un &lt;h1> en toda la web para así no marear al buscador.<br><br>
+
+                    &lt;h1>Texto aquí&lt;/h1><br>
+                    &lt;h2>Texto aquí&lt;/h2><br>
+                    &lt;h3>Texto aquí&lt;/h3><br>
+                    &lt;h4>Texto aquí&lt;/h4><br>
+                    &lt;h5>Texto aquí&lt;/h5><br>
+                    &lt;h6>Texto aquí&lt;/h6></p>
+
+                <br>
+
+                <img width="200" height="260" class="img-center" style="margin-top: 25px; box-shadow: 0px 0px 5px #000;" src="../img/h1h6.PNG" alt="h1h6">
+
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p class="blue" style="font-size:18px;">&lt;p> &lt;/p></p>
+
+                <br>
+
+                <p>Ya que estamos hablando de los textos creo que sería conveniente (y ya es hora) enseñar como poner un texto cualquiera en HTML, esto se hace poniendo las etiquetas &lt;p> (que se cierran con &lt;/p>) en cualquier parte del body, donde quieras ahí puedes meter la etiqueta &lt;p>, la cual introduce un texto cualquiera, dandole un tamaño normal como el que ven en esta app<br><br>
+
+                    &lt;p>¡Hola amigos! ¿Qué pasa? ¿Aburrido? ¡Estas aprendiendo HTML!&lt;/p>
+
+                    <br>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>Ahora que ya sabemos como poner nuestra imagen de logo, y como crear el titulo, ademas de introducir textos en nuestra web, ya podemos avanzar y ver la segunda parte que es &lt;nav> la etiqueta donde (evidentemente) irá el navegador de nuestra web.</p>
+
+            </div>
+
+            <div class="blue-background">
+
+                <a href="14.html" class="margin2"><img class="img-center" src="../img/flechaderecha.png" alt="" ></a>
+
+            </div>
+
+        </section>
+
+        <script src="../jquery/jquery.js"></script>
+        <script src="menu/jquery.slicknav.js"></script>
+        <script type="text/javascript">
+
+            $(document).ready(function(){
+
+                $("#menu").load( "menu.html", function() {
+                    $('#menu').slicknav({
+                        label : '',
+                        prependTo:'#h'
+                    });
+                });
+
+            });
+
+        </script>
+
+    </body>
+
+</html>

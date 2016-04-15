@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+
+        <meta charset="utf-8">
+
+        <title>Aprendiendo HTML</title>
+
+        <meta name="author" content="Sukafe">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <!-- Estilos -->
+
+        <link rel="stylesheet" href="../../css/style2.css">
+        <link rel="stylesheet" href="../../css/basic.css">  
+
+        <!-- Iconos -->
+
+        <link rel="stylesheet" href="../../css/font-awesome.css">
+
+        <!-- Slicknav -->
+
+        <link rel="stylesheet" href="../menu/slicknav.css">
+        <script src="../../jquery/modernizr.min.js"></script>
+
+    </head>
+
+    <body>
+
+        <header class="blue-background header">
+
+            <div style="float: right; margin-right: 150px;">
+
+                <a href="javascript:history.back();"><i class="fa fa-angle-left" style="font-size: 30px; margin-top: 8.5px; text-shadow: 0px 0px 1px black"></i></a>
+
+            </div>
+            
+            <div id="h">
+
+                <ul id="menu">
+
+                </ul>
+
+            </div>
+
+        </header>
+
+        <section>
+
+            <div class="div-abajo">
+
+                <p class="text-center" style="font-size:40px;">background: ;</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>Empezaremos por lo más básico, ¿te parece? Y bueno, la pregunta es algo relativa, pues... ¿Qué es lo más basico?<br><br> Algunos dirían que lo más básico es darle color a las letras, pero aquí el maestro lleva las riendas del curso y veremos como poner una fondo a nuestra web ;)</p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>Hay 5 propiedades que permiten definir que pondremos de fondo y como lo haremos, y una ultima propiedad que los engloba a todos juntos, pero para empezar veremos como definir un color de fondo: </p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p class="text-center" style="font-size:30px;">background-color: ;</p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>Claramente y como sabran los que sepan un mínimo de ingles, esta propiedad indica un color de fondo, la cual puede tomar dos valores, que son los que principalmente se usaran. Puede tener un nombre de color (en Ingles claro) como puede ser Yellow, y aparecerá el color que el navegador tenga predeterminado para tal valor. O también podemos decirle que color queremos exactamente, lo más popular es usar colores html, los cuales son así: <br><br>background-color: #fff; (Para el blanco) <br><br>Aprenderce de memoria todos los colores es imposible, por lo que existen herramientas como <b>html-color-codes.info</b>, una destacada web de gran utilidad ;) Veamos la estructura de las dos formas:</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p class="text-center" style="font-size:25px;">background-color: white; <br><br> background-color: #000;</p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p class="text-center" style="font-size:30px;">background-image: url("");</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>Segunda y gran propiedad que nos será de gran utilidad, dentro de los " " se debe poner la dirección donde está nuestra imagen tanto como si está en una carpeta o una web. <br><br> <b>¡RECUERDA!</b> En CSS para ir una carpeta atras se hace igual que en HTML, mediante ../</p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p class="text-center" style="font-size:30px;">background-repeat: ;</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>Los navegadores por defecto repiten las imagenes que utilizamos, para evitar que se repitan o que solo se repitan en una determinada dirección o incluso que se repita pase lo que pase, utilizamos los siguientes valores: <br><br> 
+                    <b>no-repeat</b>: la imagen no se repite <br><br>
+                    <b>repeat-x</b>: la imagen se repite únicamente en horizontal <br><br>
+                    <b>repeat-y</b>: la imagen se repite únicamente en vertical <br><br>
+                    <b>repeat</b>: la imagen se repite en horizontal y vertical <br></p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p class="text-center" style="font-size:30px;">background-position: ;</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>Para definir en que posición se encontrará el fondo, debemos de indicar la posicion vertical y horizontal, para definirlo, lo hacemos de la siguiente manera: <br><br>
+                    <b>left, center y right</b>: establecen la posición horizontal (izquierda, centro y derecha, respectivamente) <br><br>
+                    <b>top, center, bottom</b>: establece la posición vertical (arriba, enmedio, abajo, respectivamente) <br></p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p class="text-center" style="font-size:30px;">background-attachment: ;</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>Con esta propiedad definiremos si la imagen que usaremos de fondo acompañara el contenido, osea ser, que si bajamos un texto hacía abajo para leer más, la parte superior no se verá, dejando ver la parte de abajo, como en un largo texto en el que necesitamos bajar para seguir leyendo, o también puedes decir que se este quieto y cuando bajemos la página para seguir leyendo, la imagen que está de fondo, no se mueva ni lo más minimo, solamente las letras. Si no lo entienden, les pondré un ejemplo que todo hemos visto: en los creditos de las peliculas vemos como las letras van de abajo a arriba y el fondo (si tiene) no se mueve, eso quiere decir que está <b>fixed</b>, y si mientras van subiendo las letras la imagen de fondo también sube, eso quiere decir que está <b>scroll</b></p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p class="text-center" style="font-size:30px;">background: ;</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>Esta es la propiedad que los engloba todos, puede contener las cinco propiedades antes vistas en el orden que nosotros queramos. Esta propiedad no hace falta explicarla habiendo visto antes las otras cinco que componen background: ;</p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>Espero que no se te hiciera muy largo esta página, pero background es muy importante y tiene mucho que aprender, ya puedes volver a atras y seguir con HTML ;)</p>
+
+            </div>
+
+            <div class="blue-background">
+
+                <a href="../13.html" class="margin2"><img class="img-center" src="../../img/flechaizq.png" alt="" ></a>
+
+            </div>
+
+        </section>
+
+        <script src="../../jquery/jquery.js"></script>
+        <script src="../menu/jquery.slicknav.js"></script>
+        <script type="text/javascript">
+
+            $(document).ready(function(){
+
+                $("#menu").load( "../menu2.html", function() {
+                    $('#menu').slicknav({
+                        label : '',
+                        prependTo:'#h'
+                    });
+                });
+
+            });
+
+        </script>
+
+    </body>
+
+</html>

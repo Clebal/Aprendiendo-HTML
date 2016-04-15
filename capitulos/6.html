@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+
+        <meta charset="utf-8">
+        <title>Aprendiendo HTML</title>
+        <meta name="description" content="">
+        <meta name="author" content="Sukafe">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <!-- Estilos -->
+
+        <link rel="stylesheet" href="../css/style2.css">
+        <link rel="stylesheet" href="../css/basic.css">  
+
+        <!-- Iconos -->
+
+        <link rel="stylesheet" href="../css/font-awesome.css">
+
+        <!-- Slicknav -->
+
+        <link rel="stylesheet" href="menu/slicknav.css">
+        <script src="../jquery/modernizr.min.js"></script>
+
+    </head>
+
+    <body>
+
+        <header class="blue-background header">
+
+            <progress id="progress" value="12" max="100"></progress>
+
+            <div style="float: left; margin-left: 100px;">
+
+                <a href="5.html"><i class="fa fa-angle-left" style="font-size: 30px; margin-top: 8.5px; text-shadow: 0px 0px 1px black"></i></a>
+
+            </div>
+
+            <div style="float: right; margin-right: 100px;">
+
+                <a href="7.html"><i class="fa fa-angle-right" style="font-size: 30px; margin-top: 8.5px; text-shadow: 0px 0px 1px black"></i></a>
+
+            </div>
+
+            <div id="h">
+
+                <ul id="menu">
+
+
+                </ul>
+
+            </div>
+
+        </header>
+
+
+        <section>
+
+            <div class="div-abajo">
+
+                <p>En este apartado entraremos de lleno a programar hablando una a una de las etiquetas que forman la estructura básica de una web para luego entrar en parrafos, imagenes, estilos, etc. Primeramente veremos el IDE, con el que escribiremos el código de la web y como comentar el código para hacerlo más claro si trabajamos en grupo.</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <a href="externo/brackets.html"><p style="color: #0093d5; font-size: 27px;" class="text-center">Brackets.io</p></a>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>Todo programador cuando empieza a desarrollar debe escoger un IDE, según lo que vaya a utilizar y la comodidad que le proporcione. La mayoría de los que empiezan a programar utilizan <b>Notepad++</b>, un IDE muy sencillo y liviano sin mucho diseño que recomiendo mucho para quien desee aprender a programar ya que no te muestra sugerencias de codigo ni te cierra las etiquetas automaticamente, lo que hace que estes más pendiente del código. </p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>Esta app está escrita usando Brackets. Este es un IDE bastante sencillo lleno de funcionalidades, con un diseño elegante y minimalista realizado con JavaScript. Desde arriba donde dice Brackets.io pueden acceder a la web y desde ahí pueden documentarse si necesitan más información y descargarlo.</p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>Realizar un comentario es HTML es sencillo y muy útil, no solo cuando trabajamos con varios programadores si no también para guiarnos entre tantas lineas de codigo. Los comentarios son omitidos por el navegador, no los interpreta, así que puedes escribir tantos como quieras y esto no afectara al rendimiento de tu web. Esta parte no necesita más explicación pues es algo realmente secillo :)<br><br> Se hacen así:</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p class="text-center" style="font-size:32px;">&lt;!-- Texto --></p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>Ahora entremos a programar con la primera etiqueta:</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p class="text-center" style="font-size:32px;">&lt;html>&lt;/html></p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>La etiqueta que lo engloba todo se llama &lt;html>, dentro de ella estará todo lo que formará parte de nuestra web, tanto los articulos de los blogs hasta el titulo que sale en las pestañas del navegador, es por eso que esta etiqueta es muy importante y siempre deberá ser cerrada por &lt;/html></p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>Hay muchas etiquetas, algunas van cerradas y otras no se cierran, por ejemplo (Aunque todavia no lo hayamos visto), la etiqueta &lt;img> no tiene &lt;/img> si no que se cierra sola, pulsá abajo para saber por qué antes de avanzar :)</p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <a href="abierto-cerrado.html"><p class="text-center black" style="font-size:32px;"><span style="color: #0093d5;">¿</span>Abierto o cerrado<span style="color: #0093d5;">?</span></p></a>
+
+            </div>
+
+            <div class="blue-background">
+                <br>
+                <span class="icon" style="color: white; margin: 25px; font-size: 35px; display: inline;"><i style=" padding: 5px;" class="fa fa-exclamation-triangle"></i></span>
+                <p style="color: white; margin-left: 25px; margin-right: 25px;">Un <b>atributo</b> sirve para dar ciertas características a una etiqueta (Como el ancho y el alto de una imagen) <br><br> La estructura es algo así: &nbsp; nombre="valor" <br><br> En la etiqueta &lt;html>, veremos un atributo llamado lang="valor" <br><br></p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>La etiqueta &lt;html> deberá llevar el atributo lang="" para especificar el idioma de nuestra web. Si por ejemplo es en español escribes "es" y listo :) Claramente puedes usar el español de México o de Panamá, para ello escribiremos es-mx y es-pa, si quieres ver una lista completa de todas las posibilidades puedes visitar esta web:
+                </p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <a class="blue" href="externo/langvalores.html"><p class="text-center" style="font-size:32px;">Valores de lang=""</p></a>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>Existe otro atributo para la etiqueta &lt;html> que sirve para hacer que tu web pueda verse aunque el usuario sin conexión, esto es algo más avanzado por lo que aquí no veremos como se realiza, pero si te interesa puedes consultar como funciona en la W3Schools.</p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>Ya hemos visto los atributos de &lt;html> y ya esta todo aclarado respecto a esta etiqueta, tienes que recordar que es la primera etiqueta que debes de escribir y contendrá toda nuestra web. Dentro de esta etiqueta tendremos que escribir &lt;head> y &lt;body>, empezaremos aprendiendo la primera de las dos que es la que va antes.  </p>
+
+            </div>
+
+
+            <div class="blue-background">
+
+                <a href="7.html" class="margin2"><img class="img-center" src="../img/flechaderecha.png" alt="" ></a>
+
+            </div>
+
+        </section>
+
+        <script src="../jquery/jquery.js"></script>
+        <script src="menu/jquery.slicknav.js"></script>
+        <script type="text/javascript">
+
+            $(document).ready(function(){
+
+                $("#menu").load( "menu.html", function() {
+                    $('#menu').slicknav({
+                        label : '',
+                        prependTo:'#h'
+                    });
+                });
+
+            });
+
+        </script>
+
+    </body>
+
+</html>

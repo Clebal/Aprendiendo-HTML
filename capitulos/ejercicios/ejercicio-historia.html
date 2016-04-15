@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+
+        <meta charset="utf-8">
+        <title>Aprendiendo HTML</title>
+
+        <!-- Estilos -->
+
+        <link rel="stylesheet" href="../../css/style2.css">
+        <link rel="stylesheet" href="../../css/basic.css">  
+
+        <!-- Script -->
+
+        <script>
+            <!--Ocultar código
+
+            function avisoreset() {
+                if(confirm("¡ATENCIÓN!. Los datos del test se van a reiniciar.")) {
+                    document.cuestionario.reset();
+                    parent.location.reload();
+                }
+            }
+
+            var pregunta1 = "0"; 
+            var pregunta2 = "0"; 
+            var pregunta3 = "0"; 
+            var pregunta4 = "0"; 
+            var pregunta5 = "0"; 
+            var pregunta6 = "0"; 
+            var pregunta7 = "0"; 
+            var pregunta8 = "0"; 
+            var pregunta9 = "0"; 
+            var pregunta10 = "0"; 
+            var pregunta11 = "0"; 
+            var pregunta12 = "0"; 
+            var pregunta13 = "0";
+            var pregunta14 = "0";
+            var pregunta15 = "0";
+
+            function respuesta1(valor) 
+            {pregunta1 = valor}; 
+            function respuesta2(valor) 
+            {pregunta2 = valor}; 
+            function respuesta3(valor) 
+            {pregunta3 = valor}; 
+            function respuesta4(valor) 
+            {pregunta4 = valor}; 
+            function respuesta5(valor) 
+            {pregunta5 = valor}; 
+            function respuesta6(valor) 
+            {pregunta6 = valor}; 
+            function respuesta7(valor) 
+            {pregunta7 = valor}; 
+            function respuesta8(valor) 
+            {pregunta8 = valor}; 
+            function respuesta9(valor) 
+            {pregunta9 = valor}; 
+            function respuesta10(valor) 
+            {pregunta10 = valor}; 
+            function respuesta11(valor) 
+            {pregunta11 = valor}; 
+            function respuesta12(valor) 
+            {pregunta12 = valor}; 
+            function respuesta13(valor) 
+            {pregunta13 = valor}; 
+            function respuesta14(valor) 
+            {pregunta14 = valor}; 
+            function respuesta15(valor) 
+            {pregunta15 = valor}; 
+            // -->
+        </script>
+
+        <!-- Iconos -->
+
+        <link rel="stylesheet" href="../../css/font-awesome.css">
+
+        <!-- Slicknav -->
+
+        <link rel="stylesheet" href="../menu/slicknav.css">
+        <script src="../../jquery/modernizr.min.js"></script>
+
+    </head>
+
+    <body>
+
+        <header class="blue-background header">
+
+            <p style="font-size: 22px; padding-top: 1px;  float:right; margin-right: 115px;">Ejercicios</p>
+
+            <div id="h">
+
+                <ul id="menu">
+
+                </ul>
+
+            </div>
+
+        </header>
+
+        <section>
+
+            <form name="cuestionario">
+
+                <div class="div-arriba">
+
+                    <p>1. ¿En qué año se creó HTML?</p><br>
+
+                    <input type="radio" name="pregunta1" value="A" onclick="respuesta1('A')">&nbsp;A. 1991.<br>
+                    <input type="radio" name="pregunta1" value="B" onclick="respuesta1('B')">&nbsp;B. 1989.<br> 
+                    <input type="radio" name="pregunta1" value="C" onclick="respuesta1('C')">&nbsp;C. 1968.<br> 
+
+                </div>
+
+                <div class="div-abajo">
+
+                    <p>2.  ¿Quién creó HTML?</p><br>
+
+                    <input type="radio" name="pregunta2" value="A" onclick="respuesta2('A')">&nbsp;A. Fueron varias personas<br>
+                    <input type="radio" name="pregunta2" value="B" onclick="respuesta2('B')">&nbsp;B. Tim Berners-Lee<br> 
+                    <input type="radio" name="pregunta2" value="C" onclick="respuesta2('C')">&nbsp;C. Steve Jobs<br> 
+
+                </div>
+
+                <div class="div-arriba">
+
+                    <p>3. ¿Cuál fue la primera organización que influenció en el desarollo de HTML?</p><br>
+
+                    <input type="radio" name="pregunta3" value="A" onclick="respuesta3('A')">&nbsp;A. IETF<br>
+                    <input type="radio" name="pregunta3" value="B" onclick="respuesta3('B')">&nbsp;B. CERN<br> 
+                    <input type="radio" name="pregunta3" value="C" onclick="respuesta3('C')">&nbsp;C. W3C<br> 
+
+                </div>
+
+                <div class="div-abajo">
+
+                    <p>4. ¿Cómo se llamaba el primer documento publicado sobre HTML?</p><br>
+
+                    <input type="radio" name="pregunta4" value="A" onclick="respuesta4('A')">&nbsp;A. Web Tags<br>
+                    <input type="radio" name="pregunta4" value="B" onclick="respuesta4('B')">&nbsp;B. HyperText Tags<br> 
+                    <input type="radio" name="pregunta4" value="C" onclick="respuesta4('C')">&nbsp;C. HTML Tags<br> 
+
+                </div>
+
+                <div class="div-arriba">
+
+                    <p>5. ¿Cuántas etiquetas había descritas en tal documento?</p><br>
+
+                    <input type="radio" name="pregunta5" value="A" onclick="respuesta5('A')">&nbsp;A. 24<br>
+                    <input type="radio" name="pregunta5" value="B" onclick="respuesta5('B')">&nbsp;B. 22<br> 
+                    <input type="radio" name="pregunta5" value="C" onclick="respuesta5('C')">&nbsp;C. 20<br> 
+
+                </div>
+
+                <div class="div-abajo">
+
+                    <p>6. ¿Cual fué el primer borrador no realizado por el CERN que se publicó?</p><br>
+
+                    <input type="radio" name="pregunta6" value="A" onclick="respuesta6('A')">&nbsp;A. HTML<br>
+                    <input type="radio" name="pregunta6" value="B" onclick="respuesta6('B')">&nbsp;B. HTML+<br> 
+                    <input type="radio" name="pregunta6" value="C" onclick="respuesta6('C')">&nbsp;C. HTML 1.1<br> 
+
+                </div>
+
+                <div class="div-arriba">
+
+                    <p>7. ¿Qué organización se encargó de realizarlo?</p><br>
+
+                    <input type="radio" name="pregunta7" value="A" onclick="respuesta7('A')">&nbsp;A. W3C<br>
+                    <input type="radio" name="pregunta7" value="B" onclick="respuesta7('B')">&nbsp;B. IETF<br> 
+                    <input type="radio" name="pregunta7" value="C" onclick="respuesta7('C')">&nbsp;C. WHATWG<br> 
+
+                </div>
+
+                <div class="div-abajo">
+
+                    <p>8. ¿Qué ocurrió cuando salió dicho borrador?</p><br>
+
+                    <input type="radio" name="pregunta8" value="A" onclick="respuesta8('A')">&nbsp;A. Ambas.<br>
+                    <input type="radio" name="pregunta8" value="B" onclick="respuesta8('B')">&nbsp;B. Tim Berners-Lee no aprobaba tal borrador.<br> 
+                    <input type="radio" name="pregunta8" value="C" onclick="respuesta8('C')">&nbsp;C. Se publicó otro borrador a la misma vez.<br> 
+
+                </div>
+
+                <div class="div-arriba">
+
+                    <p>9. ¿Cuáles eran las características del borrador HTML+?</p><br>
+
+                    <input type="radio" name="pregunta9" value="A" onclick="respuesta9('A')">&nbsp;A. Ambas.<br>
+                    <input type="radio" name="pregunta9" value="B" onclick="respuesta9('B')">&nbsp;B. Creación de tablas.<br> 
+                    <input type="radio" name="pregunta9" value="C" onclick="respuesta9('C')">&nbsp;C. Elementos multimedia.<br> 
+
+                </div>
+
+                <div class="div-abajo">
+
+                    <p>10. ¿Que creó la IETF viendo el panorama que había con el desarrollo de HTML?</p><br>
+
+                    <input type="radio" name="pregunta10" value="A" onclick="respuesta10('A')">&nbsp;A. Un musical.<br>
+                    <input type="radio" name="pregunta10" value="B" onclick="respuesta10('B')">&nbsp;B. El HTML Working Group.<br> 
+                    <input type="radio" name="pregunta10" value="C" onclick="respuesta10('C')">&nbsp;C. Una pelicula de acción.<br> 
+
+                </div>
+
+                <div class="div-arriba">
+
+                    <p>11. ¿Después de la IETF que organización influenciaba HTML?</p><br>
+
+                    <input type="radio" name="pregunta11" value="A" onclick="respuesta11('A')">&nbsp;A. WHATWG.<br>
+                    <input type="radio" name="pregunta11" value="B" onclick="respuesta11('B')">&nbsp;B. W3C.<br> 
+                    <input type="radio" name="pregunta11" value="C" onclick="respuesta11('C')">&nbsp;C. De nuevo el CERN.<br> 
+
+                </div>
+
+                <div class="div-abajo">
+
+                    <p>12. ¿Cuál fue la primera recomendación de la W3C?.</p><br>
+
+                    <input type="radio" name="pregunta12" value="A" onclick="respuesta12('A')">&nbsp;A. HTML 3.2<br>
+                    <input type="radio" name="pregunta12" value="B" onclick="respuesta12('B')">&nbsp;B. HTML 3.0<br> 
+                    <input type="radio" name="pregunta12" value="C" onclick="respuesta12('C')">&nbsp;C. HTML 3.1<br> 
+
+                </div>
+
+                <div class="div-arriba">
+
+                    <p>13. ¿En qué año se creó la W3C?</p><br>
+
+                    <input type="radio" name="pregunta13" value="A" onclick="respuesta13('A')">&nbsp;A. 1997.<br>
+                    <input type="radio" name="pregunta13" value="B" onclick="respuesta13('B')">&nbsp;B. 1995.<br> 
+                    <input type="radio" name="pregunta13" value="C" onclick="respuesta13('C')">&nbsp;C. 1994.<br> 
+
+                </div>
+
+                <div class="div-abajo">
+
+                    <p>14. ¿Qué versión de HTML fue la considerada estandar internacional?</p><br>
+
+                    <input type="radio" name="pregunta14" value="A" onclick="respuesta14('A')">&nbsp;A. HTML 4.<br>
+                    <input type="radio" name="pregunta14" value="B" onclick="respuesta14('B')">&nbsp;B. HTML 4.01 (Transicional).<br> 
+                    <input type="radio" name="pregunta14" value="C" onclick="respuesta14('C')">&nbsp;C. HTML 4.01 (Strict).<br> 
+
+                </div>
+
+                <div class="div-arriba">
+
+                    <p>15. ¿Cómo se llamó la WHATWG a lo que en el futuro sería HTML5??</p><br>
+
+                    <input type="radio" name="pregunta15" value="A" onclick="respuesta15('A')">&nbsp;A. Web Application 1.0.<br>
+                    <input type="radio" name="pregunta15" value="B" onclick="respuesta15('B')">&nbsp;B. HTML 4.9<br> 
+                    <input type="radio" name="pregunta15" value="C" onclick="respuesta15('C')">&nbsp;C. Application HTML 1.0.<br> 
+
+                </div>
+
+                <script>
+                    <!--Ocultar código
+                    function examinar() 
+                    { 
+                        puntuacion=0; 
+                        nocontesta=0; 
+                        contestadas=0; 
+                        puntosmaximos=0;
+
+                        if(pregunta1!= "0" )
+                        {
+                            contestadas=contestadas+1
+                            puntosmaximos=puntosmaximos+2
+                            if(pregunta1 == "A") {puntuacion=puntuacion+2}
+                            if(pregunta1 == "B") {puntuacion=puntuacion+0}
+                            if(pregunta1 == "C") {puntuacion=puntuacion-1}
+                        }
+                        else {nocontesta=nocontesta+1}
+
+                        if(pregunta2 != "0")
+                        {
+                            contestadas=contestadas+1
+                            puntosmaximos=puntosmaximos+1
+                            if(pregunta2 == "A") {puntuacion=puntuacion+0}
+                            if(pregunta2 == "B") {puntuacion=puntuacion+1}
+                            if(pregunta2 == "C") {puntuacion=puntuacion+0}
+                        }
+                        else {nocontesta=nocontesta+1}
+
+                        if(pregunta3!= "0" )
+                        {
+                            contestadas=contestadas+1
+                            puntosmaximos=puntosmaximos+2
+                            if(pregunta3 == "A") {puntuacion=puntuacion+0}
+                            if(pregunta3 == "B") {puntuacion=puntuacion+2}
+                            if(pregunta3 == "C") {puntuacion=puntuacion-1}
+                        }
+                        else {nocontesta=nocontesta+1}
+
+                        if(pregunta4 != "0")
+                        {
+                            contestadas=contestadas+1
+                            puntosmaximos=puntosmaximos+1
+                            if(pregunta4 == "A") {puntuacion=puntuacion+0}
+                            if(pregunta4 == "B") {puntuacion=puntuacion+0}
+                            if(pregunta4 == "C") {puntuacion=puntuacion+1}
+                        }
+                        else {nocontesta=nocontesta+1}
+
+                        if(pregunta5!= "0" ){
+                            contestadas=contestadas+1
+                            puntosmaximos=puntosmaximos+2
+                            if(pregunta5 == "A") {puntuacion=puntuacion-2}
+                            if(pregunta5 == "B") {puntuacion=puntuacion+2}
+                            if(pregunta5 == "C") {puntuacion=puntuacion-3}
+                        }
+                        else {nocontesta=nocontesta+1}
+
+                        if(pregunta6 != "0")
+                        {
+                            contestadas=contestadas+1
+                            puntosmaximos=puntosmaximos+3
+                            if(pregunta6 == "A") {puntuacion=puntuacion+3}
+                            if(pregunta6 == "B") {puntuacion=puntuacion+0}
+                            if(pregunta6 == "C") {puntuacion=puntuacion-3}
+                        }
+                        else {nocontesta=nocontesta+1}
+
+                        if(pregunta7!= "0" )
+                        {
+                            contestadas=contestadas+1
+                            puntosmaximos=puntosmaximos+2
+                            if(pregunta7 == "A") {puntuacion=puntuacion+0}
+                            if(pregunta7 == "B") {puntuacion=puntuacion+2}
+                            if(pregunta7 == "C") {puntuacion=puntuacion-1}
+                        }
+                        else {nocontesta=nocontesta+1}
+
+                        if(pregunta8 != "0")
+                        {
+                            contestadas=contestadas+1
+                            puntosmaximos=puntosmaximos+1
+                            if(pregunta8 == "A") {puntuacion=puntuacion+0}
+                            if(pregunta8 == "B") {puntuacion=puntuacion+0}
+                            if(pregunta8 == "C") {puntuacion=puntuacion+1}
+                        }
+                        else {nocontesta=nocontesta+1}
+
+                        if(pregunta9!= "0" )
+                        {
+                            contestadas=contestadas+1
+                            puntosmaximos=puntosmaximos+3
+                            if(pregunta9 == "A") {puntuacion=puntuacion+3}
+                            if(pregunta9 == "B") {puntuacion=puntuacion+0}
+                            if(pregunta9 == "C") {puntuacion=puntuacion+0}
+                        }
+                        else {nocontesta=nocontesta+1}
+
+                        if(pregunta10 != "0")
+                        {
+                            contestadas=contestadas+1
+                            puntosmaximos=puntosmaximos+2
+                            if(pregunta10 == "A") {puntuacion=puntuacion+0}
+                            if(pregunta10 == "B") {puntuacion=puntuacion+2}
+                            if(pregunta10 == "C") {puntuacion=puntuacion-1}
+                        }
+                        else {nocontesta=nocontesta+1}
+
+                        if(pregunta11!= "0" )
+                        {
+                            contestadas=contestadas+1
+                            puntosmaximos=puntosmaximos+2
+                            if(pregunta11 == "A") {puntuacion=puntuacion+0}
+                            if(pregunta11 == "B") {puntuacion=puntuacion+2}
+                            if(pregunta11 == "C") {puntuacion=puntuacion-1}
+                        }
+                        else {nocontesta=nocontesta+1}
+
+
+                        if(pregunta12 != "0")
+                        {
+                            contestadas=contestadas+1
+                            puntosmaximos=puntosmaximos+2
+                            if(pregunta12 == "A") {puntuacion=puntuacion+2}
+                            if(pregunta12 == "B") {puntuacion=puntuacion+0}
+                            if(pregunta12 == "C") {puntuacion=puntuacion-1}
+                        }
+                        else {nocontesta=nocontesta+1}
+
+                        if(pregunta13 != "0")
+                        {
+                            contestadas=contestadas+1
+                            puntosmaximos=puntosmaximos+2
+                            if(pregunta13 == "A") {puntuacion=puntuacion+0}
+                            if(pregunta13 == "B") {puntuacion=puntuacion-1}
+                            if(pregunta13 == "C") {puntuacion=puntuacion+2}
+                        }else {nocontesta=nocontesta+1}
+
+                        if(pregunta14 != "0")
+                        {
+                            contestadas=contestadas+1
+                            puntosmaximos=puntosmaximos+3
+                            if(pregunta14 == "A") {puntuacion=puntuacion+0}
+                            if(pregunta14 == "B") {puntuacion=puntuacion-1}
+                            if(pregunta14 == "C") {puntuacion=puntuacion+3}
+                        }
+                        else {nocontesta=nocontesta+1}
+
+                        if(pregunta15 != "0"){
+                            contestadas=contestadas+1
+                            puntosmaximos=puntosmaximos+4
+                            if(pregunta15 == "A") {puntuacion=puntuacion+4}
+                            if(pregunta15 == "B") {puntuacion=puntuacion+0}
+                            if(pregunta15 == "C") {puntuacion=puntuacion-1}
+                        }
+                        else {nocontesta=nocontesta+1}
+
+                        if (puntosmaximos!=0) 
+                        {indiceacierto=Math.round(100*(puntuacion/puntosmaximos))
+                        } 
+                        else{indiceacierto=0}
+
+
+                        if(indiceacierto==100) 
+                        {
+                            mensaje="SOBRESALIENTE. Sus conocimientos de Alar  son excelentes"} 
+                        if(indiceacierto<100&&indiceacierto>=75) 
+                        {
+                            mensaje="NOTABLE. Usted tiene una buena idea sobre Alar."} 
+                        if(indiceacierto<75&&indiceacierto>=50)
+                        {
+                            mensaje="BIEN. Puede defenderse con ayuda de un alarigena."} 
+                        if(indiceacierto<50&&indiceacierto>=25)
+                        {
+                            mensaje="JUSTILLO. Debe ir mas a menudo."} 
+                        if(indiceacierto<25)
+                        {
+                            mensaje="DESASTROSO. Estudie mas!"} 
+                        if(contestadas==0)
+                        {
+                            mensaje="Por favor, conteste alguna de las preguntas del test. ¡LISTILLO!"}
+
+                        alert("Su puntuación es "+puntuacion+"." + "\n\nSu puntuación sobre 10 es "   +   puntuacion*0.3125 + "\n\nEl número máximo de puntos que podía conseguir era de " + puntosmaximos + ".\n\nHa dejado sin contestar "+ nocontesta+".\n\nSu porcentaje de aciertos es de "+indiceacierto+"%.\n\n"+mensaje+".")
+
+                    }
+
+                    // Fin de ocultar-->
+
+                </script>
+
+                <div class="text-center margin2-top">
+
+                    <input class="div-center btn caja" type="button" name="submit" value="Comprobar Test" onclick="examinar()">
+                    <input class="div-center btn caja" type="button" name="Reset" value="Reinicar test" onClick="avisoreset()">
+                    <input class="div-center btn caja margin1-top" type="button" name="solucion" value="Respuestas correctas" onclick="alert('Respuestas Correctas\n\n1:A   6:A  11:B\n2:B   7:B  12:A\n3:B   8:C  13:C\n4:C   9:A  14:C\n5:B  10:B  15:A')">
+
+                </div>
+
+                <br>
+
+            </form>
+
+            <div class="blue-background">
+
+                <a href="../4.html" class="margin2"><img class="img-center" src="../../img/flechaizq.png" alt="" ></a>
+
+
+            </div>
+
+        </section>
+
+        <script src="../../jquery/jquery.js"></script>
+        <script src="../menu/jquery.slicknav.js"></script>
+        <script type="text/javascript">
+
+            $(document).ready(function(){
+
+                $("#menu").load( "../menu2.html", function() {
+                    $('#menu').slicknav({
+                        label : '',
+                        prependTo:'#h'
+                    });
+                });
+
+            });
+
+        </script>
+
+    </body>
+
+</html>

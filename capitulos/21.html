@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+
+        <meta charset="utf-8">
+
+        <title>Aprendiendo HTML</title>
+
+        <meta name="author" content="Sukafe">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <!-- Estilos -->
+
+        <link rel="stylesheet" href="../css/style2.css">
+        <link rel="stylesheet" href="../css/basic.css">  
+
+        <!-- Iconos -->
+
+        <link rel="stylesheet" href="../css/font-awesome.css">
+
+        <!-- Slicknav -->
+
+        <link rel="stylesheet" href="menu/slicknav.css">
+        <script src="../jquery/modernizr.min.js"></script>
+
+    </head>
+
+    <body>
+
+        <header class="blue-background header">
+
+            <progress id="progress" value="60" max="100"></progress>
+
+            <div style="float: left; margin-left: 100px;">
+
+                <a href="20.html"><i class="fa fa-angle-left" style="font-size: 30px; margin-top: 8.5px; text-shadow: 0px 0px 1px black"></i></a>
+
+            </div>
+
+            <div style="float: right; margin-right: 100px;">
+
+                <a href="22.html"><i class="fa fa-angle-right" style="font-size: 30px; margin-top: 8.5px; text-shadow: 0px 0px 1px black"></i></a>
+
+            </div>
+
+            <div id="h">
+
+                <ul id="menu">
+
+                </ul>
+
+            </div>
+
+        </header>
+
+        <section>
+
+            <div class="div-abajo">
+
+                <p style="font-size: 35px; text-align: center">&lt;hr></p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>Visualmente solo vamos a ver esto... <br><br> <hr> <br><br> Pero esta etiqueta para lo que sirve es para crear un linea que ocupe todo el ancho la cual separe los temas de los que hablamos :)</p>
+
+            </div>
+
+        <div class="div-abajo">
+
+            <p style="font-size: 35px; text-align: center">&lt;q> &lt;s> &lt;bdo></p>
+
+        </div>
+
+        <div class="div-arriba">
+
+            <p>Como digo Jack El Destripador <q>Vamos por partes.</q> <br><br> Las comillas que veis no las he escrito, sino que mejor eh puesto la etiqueta &lt;q> que sirve para poner las comillas y darle a esa parte del texto valor de cita. </p>
+
+        </div>
+
+        <div class="div-abajo">
+
+            <p><s>You is a chicken</s> <br><br> You are a chicken <br><br> Es bastante evidente para que sirve &lt;s>, ¿no? Claramente es para tachar algo que está mal ;)</p>
+
+        </div>
+
+        <div class="div-arriba">
+
+            <p><bdo dir="rtl">Sukafe</bdo> y <bdo dir="ltr">Sukafe</bdo> <br><br> &lt;bdo> sirve para marcar la dirección del texto, ¿cómo se le indica si para la izq o la derecha? Con el atributo dir="" y los valores rtl (<bdo dir="rtl">Sukafe</bdo>) y ltr (<bdo dir="ltr">Sukafe</bdo>). Es fácil de memorizar los valores ya que para escribir el texto al reves el valor es poniendo al reves ltr ;)</p>
+
+        </div>
+
+        <div class="div-abajo">
+
+            <p style="font-size: 35px; text-align: center">&lt;abbr></p>
+
+        </div>
+
+        <div class="div-arriba">
+
+            <p>Desde el móvil no lo verán pero para los usuarios de ordenador esta etiqueta en bien usada, &lt;abbr se complementa con el atributo title="" para especificar el nombre completo de las abreviaturas, por ejemplo:
+
+                <br><br>
+
+                RENFE sería el acrónimo de Red Nacional de Ferrocarriles Españoles. Para el que no lo supiera, se pondría:
+
+                <br><br>
+
+                &lt;p><br>&lt;abbr title="Red Nacional de Ferrocarriles Españoles">RENFE&lt;/abbr> trabajo muy bien :) <br>&lt;/p>
+
+                <br><br>
+
+                ¿Ven? Es super fácil ;)
+
+
+            </p>
+
+        </div>
+
+        <div class="div-abajo">
+
+            <p>Por fin ya no más etiquetas para adornar nuestro textos, ahora vamos a pasar a la siguiente, vamos ya queda poco para terminar...</p>
+
+        </div>
+
+        <div class="blue-background">
+
+            <a href="22.html" class="margin5"><img class="img-center" src="../img/flechaderecha.png" alt="" ></a>
+
+        </div>
+
+        </section>
+
+    <script src="../jquery/jquery.js"></script>
+    <script src="menu/jquery.slicknav.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+
+            $("#menu").load( "menu.html", function() {
+                $('#menu').slicknav({
+                    label : '',
+                    prependTo:'#h'
+                });
+            });
+
+        });
+
+    </script>
+
+    </body>
+
+</html>

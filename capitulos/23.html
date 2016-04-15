@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+
+        <meta charset="utf-8">
+
+        <title>Aprendiendo HTML</title>
+
+        <meta name="author" content="Sukafe">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <!-- Estilos -->
+
+        <link rel="stylesheet" href="../css/style2.css">
+        <link rel="stylesheet" href="../css/basic.css">  
+
+        <!-- Iconos -->
+
+        <link rel="stylesheet" href="../css/font-awesome.css">
+
+        <!-- Slicknav -->
+
+        <link rel="stylesheet" href="menu/slicknav.css">
+        <script src="../jquery/modernizr.min.js"></script>
+
+    </head>
+
+    <body>
+
+        <header class="blue-background header">
+
+            <progress id="progress" value="80" max="100"></progress>
+
+            <div style="float: left; margin-left: 100px;">
+
+                <a href="22.html"><i class="fa fa-angle-left" style="font-size: 30px; margin-top: 8.5px; text-shadow: 0px 0px 1px black"></i></a>
+
+            </div>
+
+            <div style="float: right; margin-right: 100px;">
+
+                <a href="24.html"><i class="fa fa-angle-right" style="font-size: 30px; margin-top: 8.5px; text-shadow: 0px 0px 1px black"></i></a>
+
+            </div>
+
+            <div id="h">
+
+                <ul id="menu">
+
+                </ul>
+
+            </div>
+
+        </header>
+
+        <section>
+
+            <div class="div-arriba">
+
+                <p style="font-size: 35px; text-align: center">¿Cómo crear tablas?</p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>No hay mejor forma que organizar y mostrar datos que a través de una completa tabla que pueda satisfacer nuestras necesidades, para ello vamos a ver como crear una completa en HTML5.</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>Vamos a empezar con lo básico, la etiqueta que definirá que a partir de ella empieza una tabla y la cual al cerrarla hace saber al navegador que a partir de aquí no es una tabla, esta etiqueta es &lt;table> &lt;/table>. Luego ponemos el título de la tabla con la etiqueta &lt;caption> &lt;/caption>.</p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>Vamos a dividir la tabla en 3 partes, el encabezado &lt;thead> (todo lo que este dentro de esa etiqueta será el encabezado), el cuerpo de la tabla &lt;tbody> (todo lo que este dentro de esa etiqueta será el cuerpo de nuestra tabla) y por último el pie de la tabla &lt;tfoot>.</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>Para crear los rectangulos (celdas) de la tabla lo haremos de la siguiente forma... <br><br> La etiqueta &lt;tr> definirá una fila, dentro de esa fila, entre &lt;tr> y &lt;/tr> irán las celdas, estas se definen con &lt;td> &lt;/td> (Todas las etiquetas relacionadas con las tablas se cierran). Además hay que recordar que para las celdas del encabezado deben ser &lt;th></p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <table border="1">
+
+                    <caption>Tabla HTML5</caption>
+
+                    <tr>
+
+                        <td>1º Celda</td>
+                        <td>2º Celda</td>
+                        <td>3º Celda</td>
+
+                    </tr>
+
+                </table>
+
+                <br><br>
+
+                <p>Código: <br><br>
+
+                    &lt;table border="1"><br>
+
+                    &nbsp;&nbsp;&lt;caption>Tabla HTML5&lt;/caption><br>
+
+                    &nbsp;&nbsp;&lt;tr><br>
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;td>1º celda&lt;/td><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;td>2º celda&lt;/td><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;td>3º celda&lt;/td><br>
+                    &nbsp;&nbsp;&lt;/tr><br>
+
+                    &lt;/table>
+
+                </p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>Vamos a ver los atributos colspan y rowspan, estos basicamente lo que hacen es aumentar su tamaño una celda más verticalmente (rowspan) u horizontalmente (colspan). Para hacer que esto funcione, la tabla debe tener minimo dos filas (Ya sabes que se ponen con &lt;tr>, para usar cualquiera de los dos atributos que se ponen en la etiqueta &lt;td> o &lt;th>, veamos un ejemplo: </p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <table border="1">
+
+                    <caption>Tabla HTML5 2</caption>
+
+                    <tr>
+
+                        <td colspan="2">Celda ampliada</td>
+                        <td>2º Celda</td>
+                        <td>3º Celda</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>1º Celda</td>
+                        <td>2º Celda</td>
+                        <td>3º Celda</td>
+
+                    </tr>
+
+                </table>
+
+                <br><br>
+
+                <p>Código: <br><br>
+
+                    &lt;table border="1"><br><br>
+
+                    &nbsp;&nbsp;&lt;caption>Tabla HTML5&lt;/caption><br><br>
+
+                    &nbsp;&nbsp;&lt;tr><br>
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;td colspan="2">Celda ampliada&lt;/td><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;td>2º Celda&lt;/td><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;td>3º Celda&lt;/td><br>
+
+                    &nbsp;&nbsp;&lt;/tr><br><br>
+
+                    &nbsp;&nbsp;&lt;tr><br>
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;td>1º celda&lt;/td><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;td>2º celda&lt;/td><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;td>3º celda&lt;/td><br>
+                    &nbsp;&nbsp;&lt;/tr><br><br>
+
+                    &lt;/table>
+
+                </p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>Hasta aquí las tablas, ¿qué te pareció? Demasiado fácil seguro! Si quieres ampliar tus conocimientos y ser todo un experto en tablas, no dudes en pasarte por este <a href="http://www.html5.showbizreal.com/Columnas/module/tableMod.php" style="color: dodgerblue">artículo</a>. Sigamos adelante, ya te estás deborando todas las etiquetas de HTML5 ;)</p>
+
+            </div>
+
+
+            <div class="blue-background">
+
+                <a href="24.html" class="margin5"><img class="img-center" src="../img/flechaderecha.png" alt="" ></a>
+
+            </div>     
+
+        </section>
+
+        <script src="../jquery/jquery.js"></script>
+        <script src="menu/jquery.slicknav.js"></script>
+        <script type="text/javascript">
+
+            $(document).ready(function(){
+
+                $("#menu").load( "menu.html", function() {
+                    $('#menu').slicknav({
+                        label : '',
+                        prependTo:'#h'
+                    });
+                });
+
+            });
+
+        </script>
+
+    </body>
+
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+
+        <meta charset="utf-8">
+        <title>Aprendiendo HTML</title>
+
+        <meta name="author" content="Sukafe">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <!-- Estilos -->
+
+        <link rel="stylesheet" href="../../css/style2.css">
+        <link rel="stylesheet" href="../../css/basic.css">  
+
+        <!-- Iconos -->
+
+        <link rel="stylesheet" href="../../css/font-awesome.css">
+
+        <!-- Slicknav -->
+
+        <link rel="stylesheet" href="../menu/slicknav.css">
+        <script src="../../jquery/modernizr.min.js"></script>
+        
+    </head>
+
+    <body>
+
+        <header class="blue-background header">
+
+            <div style="float: right; margin-right: 150px;">
+
+                <a href="javascript:history.back();"><i class="fa fa-angle-left" style="font-size: 30px; margin-top: 8.5px; text-shadow: 0px 0px 1px black"></i></a>
+
+            </div>
+            
+            <div id="h">
+
+                <ul id="menu">
+
+                </ul>
+
+            </div>
+
+        </header>
+
+        <section>
+
+            <div class="div-abajo">
+
+                <p class="text-center" style="font-size:40px;">display: ; color; y opacity;</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>Quiero enseñaros la propiedad display ; aunque esta sea algo díficil y extraña. ¿Por qué quiero enseñarosla si es díficil? Porque tiene relación con las etiquetas que vais a aprender, por eso, vamos a ello :) </p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>display fue una propiedad introducida en la versión CSS 2.1 (Sé que esto no es relevante, pero nunca esta de más, ¿verdad? y sirve para establecer que tipo de caja establece cada etiqueta que escribamos. En LibrosWeb (página que recomiendo) se puede que leer: <br><br> "La propiedad display es tan compleja que casi ningún navegador es capaz de mostrar correctamente todos sus valores." <br><br> Aunque esas palabras suenen duras, verás que no es tan díficil ;)</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p class="text-center" style="font-size:30px;">display: none;</p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>Y... ¡BUALA! La etiqueta desapareció como un buen mago. Es evidente para que sirve el valor none, ¿verdad?El valor none hará que la etiqueta desaparezca y las etiquetas que estan debajo suban como si ahí no existiera ningun elemento. Si queremos hacer que el elemento desaparezca pero sin que ningun otro elemento se mueva, lo hariamos con la propiedad opacity cuyos valores van desde el 0 al 1, pasando por el 0.2, 0,3, etc. Siendo el 0 transparente y el 1 totalmente opaco. </p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p class="text-center" style="font-size:25px;">display: block;</p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>display: block; es la propiedad que viene definida en la mayoria de las etiquetas, la cual hace que esta ocupe todo el ancho de la página. Veamos un par de ejemplos:</p>
+
+                <img width="100%" height="260" class="img-center" style="margin-top: 25px; box-shadow: 0px 0px 5px #000;" src="../../img/display_ejemplo1.png" alt="Ejemplo 1">
+
+                <br><br>
+
+                Aunque no podamos ver la página entera del ejemplo, podemos sacar buenas conclusiones:
+
+                Esto como ven es una lista la cual se hace con una serie de etiquetas que podemos ver en la página anterior si no la han leido todavía, les recomendaría que primero vieran como se crea una lista para poder entenderlo mejor :) Pues lo que decía, esto es una lista.
+
+
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>
+
+                    &lt;ul><br>
+                    &nbsp;&nbsp;&nbsp;&lt;li>HTML5&lt;/li><br>
+                    &nbsp;&nbsp;&nbsp;&lt;li>CSS3&lt;/li><br>
+                    &nbsp;&nbsp;&nbsp;&lt;li>PHP&lt;/li><br>
+                    &nbsp;&nbsp;&nbsp;&lt;li>JS&lt;/li><br>
+                    &nbsp;&nbsp;&nbsp;&lt;li>JQuery&lt;/li><br>
+                    &lt;/ul>
+
+                </p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>Por defecto las etiquetas &lt;ul> e &lt;li> llevan la propiedad display:block;</p>
+
+            </div>
+
+            <div class="blue-background">
+                <br>
+                <span class="icon" style="color: white; margin: 25px; font-size: 35px; display: inline;"><i style=" padding: 5px;" class="fa fa-exclamation-triangle"></i></span>
+                <p style="color: white; margin-left: 25px; margin-right: 25px;">¿Cómo es eso de que por defecto lleva una propiedad?<br><br>A mi me sonó un poco chocante cuando lo estudié por primera vez, pero es cierto, los navegadores tienen una serie de estilos definido por defecto los cuales pueden o no variar entre diferente navegadores, normalmente suelen ser los mismos pero en algunos casos cambia.<br><br> </p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>Como iba diciendo, las dos etiquetas llevan la propiedad display: block; por defecto, lo que quiere decir que la caja imaginaria que contiene la palabra HTML5 (Como en el ejemplo) va a ocupar todo el espacio posible por lo que ninguna otra etiqueta se puede poner a la derecha de él. Tal vez te preguntes, y si no deberías de empezar a preguntartelo, como es que las barras de menú tipicas para navegar en algunas web suelen se horizontales. Abajo la respuesta ;) </p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p class="text-center" style="font-size:30px;">display: inline;</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>display:inline; hace que la caja ocupe lo que ocupa la palabra, ni un pixel mas ni menos.</p>
+
+                <img width="100%" height="260" class="img-center" style="margin-top: 25px; box-shadow: 0px 0px 5px #000;" src="../../img/display_ejemplo2.png" alt="Ejemplo 2">
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>
+
+                    &lt;ul><br>
+                    &nbsp;&nbsp;&nbsp;&lt;li style="display: inline">HTML5&lt;/li><br>
+                    &nbsp;&nbsp;&nbsp;&lt;li style="display: inline">CSS3&lt;/li><br>
+                    &nbsp;&nbsp;&nbsp;&lt;li>PHP&lt;/li><br>
+                    &nbsp;&nbsp;&nbsp;&lt;li>JS&lt;/li><br>
+                    &nbsp;&nbsp;&nbsp;&lt;li>JQuery&lt;/li><br>
+                    &lt;/ul>
+
+                </p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>Como ves, hemos mezclado tres etiquetas &lt;li> que llevan la propiedad display: block; con otras dos &lt;li> que llevan la propiedad display: inline. <br><br> Puedes ver como las dos etiquetas &lt;li> que llevan la propiedad inline, estan en una misma linea, ya que sus cajas solo ocupan lo que ocupa la palabra que las contiene y no todo el ancho de la página. Así es como se hacen los menú horinzontales ;)</p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p class="text-center" style="font-size:30px;">display: inline-block;</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>Quisiera ser sincero con vosotros, conocía el valor inline-block, pero me ha costado entenderlo para poder explicaroslo, espero hacerlo bien...</p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>Inline-block es un valor que le dice a la caja que se comporte como un inline y como un block, que sea un hibrido de los dos. El valor Block puede llevar otras propiedades como width, pero inline no; si inline no tiene ningun texto la caja será 0px, pero si usamos el atributo block con un width de 20px, será 20px. Inline-block recoje ambas cosas de inline-block, no ocupa todo el ancho de la página (Sí, no lo ocupa aunque ni pongamos el width) y podemos usar el width, no como con inline.</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>Por supuesto sobra decir que hay muchos más valores para la propiedad display pero que no son básicos ni mucho menos, si te interesa más el tema de los display siempre puedes Googlear un poco ;) </p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p><span style="color: blue">Creo que arriba en el titulo, </span><span style="color: green">decía algo de la propiedad color:; </span><span style="color: red">esta como bien se sabe y es muy obvio, </span><span style="color: dodgerblue">sirve para darle color a un texto.</span><span style="violet">Por supuesto es la propiedad que estoy usando</span><span style="color: pink"> para colorear estas letras, y esta es su estructura:</span></p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p class="text-center" style="font-size:30px;">color: black;</p>
+                <p class="text-center" style="font-size:30px;">color: #000;</p>
+                <p class="text-center" style="font-size:30px;">color: rbg(0,0,0);</p>
+                <p class="text-center" style="font-size:30px;">color: rbga(0,0,0,0);</p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>Tenemos varias opciones para colorear nuestro texto, podemos poner el nombre del color, como por ejemplo black (En inglés por supuesto) y el navegador pondrá el color negro. Podemos hacerlo con colores html que se compone de una almohadilla con 6 digitos, aunque aquí solo salga #000, en realidad es #000000 pero se acorta, al igual que en el blanco (#ffffff es #fff). La diferencia entre rgb y rgba es que rgba habilita la transparencia en su ultima casilla, ese ultimo cero va desde 0 hasta 1 para habilitar la transparencia.</p>
+
+            </div>
+
+            <div class="blue-background">
+
+                <a href="../14.html" class="margin2"><img class="img-center" src="../../img/flechaizq.png" alt="" ></a>
+
+
+            </div>
+
+        </section>
+
+        <script src="../../jquery/jquery.js"></script>
+        <script src="../menu/jquery.slicknav.js"></script>
+        <script type="text/javascript">
+
+            $(document).ready(function(){
+
+                $("#menu").load( "../menu2.html", function() {
+                    $('#menu').slicknav({
+                        label : '',
+                        prependTo:'#h'
+                    });
+                });
+
+            });
+
+        </script>
+        
+    </body>
+
+</html>

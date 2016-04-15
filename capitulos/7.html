@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+
+        <meta charset="utf-8">
+        <title>Aprendiendo HTML</title>
+        <meta name="description" content="">
+        <meta name="author" content="Sukafe">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <!-- Estilos -->
+
+        <link rel="stylesheet" href="../css/style2.css">
+        <link rel="stylesheet" href="../css/basic.css">  
+
+        <!-- Iconos -->
+
+        <link rel="stylesheet" href="../css/font-awesome.css">
+
+        <!-- Slicknav -->
+
+        <link rel="stylesheet" href="menu/slicknav.css">
+        <script src="../jquery/modernizr.min.js"></script>
+
+        <!-- Cuestionario -->
+
+        <script>
+
+            <!--Ocultar código
+
+            var pregunta1 = "0"; 
+
+            function respuesta1(valor) 
+            {pregunta1 = valor};             
+            // -->
+
+        </script>
+
+    </head>
+
+    <body>
+
+        <header class="blue-background header">
+
+            <progress id="progress" value="14" max="100"></progress>
+
+            <div style="float: left; margin-left: 100px;">
+
+                <a href="6.html"><i class="fa fa-angle-left" style="font-size: 30px; margin-top: 8.5px; text-shadow: 0px 0px 1px black"></i></a>
+
+            </div>
+
+            <div style="float: right; margin-right: 100px;">
+
+                <a href="8.html"><i class="fa fa-angle-right" style="font-size: 30px; margin-top: 8.5px; text-shadow: 0px 0px 1px black"></i></a>
+
+            </div>
+
+            <div id="h">
+
+                <ul id="menu">
+                    
+                </ul>
+
+            </div>
+
+        </header>
+
+        <section>
+
+            <div class="div-abajo">
+
+                <p>Todos sabemos que cuando iniciamos una web aparece en la pestaña del navegador el titulo de la web. También esta web aparece en las busquedas de Google y tiene una descripción, otra cosa es que la web se ve bien, tiene una estetica excelente. Todo ello se reune en una etiqueta llamada:</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p style="font-size: 50px;" class="text-center">&lt;head></p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>La etiqueta &lt;head> se compone de varias etiquetas con las que obtendremos las cosas mencionadas arriba. &lt;head> es, al igual que &lt;html> o &lt;body>, un contenedor que reune muchas etiquetas.</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>Cuando el navegador está leyendo el código y se encuentra con la etiqueta &lt;head> que...</p>
+
+            </div>
+
+
+
+            <form name="cuestionario">
+
+                <div class="div-abajo">
+
+                    <p>¿Se cierra o no, la etiqueta &lt;head>?</p><br>
+
+                    <input type="radio" name="pregunta1" value="A" onclick="respuesta1('A')">&nbsp;A. Sí<br>
+                    <input type="radio" name="pregunta1" value="B" onclick="respuesta1('B')">&nbsp;B. No<br> 
+                    <input type="radio" name="pregunta1" value="C" onclick="respuesta1('C')">&nbsp;C. Sí pero con la etiqueta &lt;//head><br> 
+
+                    <div class="text-center margintop-2 marginbottom-2">
+
+                        <input class="div-center btn caja" type="button" style="font-size: 17px;" onclick="examinar()" value="Comprobar">
+
+                    </div>
+
+
+                </div>
+
+                <script>
+                    <!--Ocultar código
+                    function examinar() 
+                    { 
+                        puntuacion=0; 
+                        nocontesta=0; 
+                        contestadas=0; 
+                        puntosmaximos=0;
+
+                        if(pregunta1!= "0" )
+                        {
+                            contestadas=contestadas+1
+                            puntosmaximos=puntosmaximos+100
+                            if(pregunta1 == "A") {puntuacion=puntuacion+100}
+                            if(pregunta1 == "B") {puntuacion=puntuacion+0}
+                            if(pregunta1 == "C") {puntuacion=puntuacion+0}
+                        }
+                        else {nocontesta=nocontesta+1}
+
+                        if(puntuacion==100) 
+                        {
+                            mensaje="¡Acertaste!"} 
+
+                        if(puntuacion==0)
+                        {    
+                            mensaje="¡Fallaste!"} 
+
+                        if(contestadas==0)
+                        {
+                            mensaje="Contesta anda..."}
+
+                        alert(mensaje)
+
+
+                    }
+                    // -->
+
+                </script>
+
+            </form>
+
+
+            <div class="div-arriba">
+
+                <p>Esta etiqueta no tiene un atributo especifico, sin embargo existe una serie de atributos que sirven para todas las etiquetas llamados: </p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <a href="externo/globalatr.html"><p style="color: #0093d5; font-size: 27px;" class="text-center">Atributos Globales</p></a>
+
+            </div>
+
+            <div class="blue-background">
+                <br>
+                <span class="icon" style="color: white; margin: 25px; font-size: 35px; display: inline;"><i style=" padding: 5px;" class="fa fa-exclamation-triangle"></i></span>
+                <p style="color: white; margin-left: 25px; margin-right: 25px;">Si utilizamos una versión antes de HTML5, los atributos globales no serán para todas las etiquetas. <br><br> Pero como nosotros vamos a trabajar con HTML5 tendremos en cuantas que los atributos globales sirven para todas las etiquetas que escribamos <br><br> Cabe destacar que el que sirvan para todas las etiquetas no quiere decir que tengan sentido o utilidad en todas. <br><br> </p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>Para no hacer un página tan larga, iré explicando las etiquetas que se encuentran dentro de &lt;head> en páginas distintas para que se pueda consultar mejor. </p>
+
+            </div>
+
+
+            <div class="div-abajo">
+
+                <p>Primeramente vamos a ver la etiqueta &lt;meta></p>
+
+            </div>
+
+            <div class="blue-background">
+
+                <a href="8.html" class="margin2"><img class="img-center" src="../img/flechaderecha.png" alt="" ></a>
+
+            </div>
+
+        </section>
+
+        <script src="../jquery/jquery.js"></script>
+        <script src="menu/jquery.slicknav.js"></script>
+        <script type="text/javascript">
+
+            $(document).ready(function(){
+
+                $("#menu").load( "menu.html", function() {
+                    $('#menu').slicknav({
+                        label : '',
+                        prependTo:'#h'
+                    });
+                });
+
+            });
+
+        </script>
+
+    </body>
+
+</html>

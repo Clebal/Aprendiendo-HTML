@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+
+        <meta charset="utf-8">
+        <title>Aprendiendo HTML</title>
+        <meta name="description" content="">
+        <meta name="author" content="Sukafe">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <!-- Estilos -->
+
+        <link rel="stylesheet" href="../css/style2.css">
+        <link rel="stylesheet" href="../css/basic.css">  
+
+        <!-- Iconos -->
+
+        <link rel="stylesheet" href="../css/font-awesome.css">
+
+        <!-- Slicknav -->
+
+        <link rel="stylesheet" href="menu/slicknav.css">
+        <script src="../jquery/modernizr.min.js"></script>
+
+    </head>
+
+    <body>
+
+        <header class="blue-background header">
+
+            <progress id="progress" value="24" max="100"></progress>
+
+            <div style="float: left; margin-left: 100px;">
+
+                <a href="11.html"><i class="fa fa-angle-left" style="font-size: 30px; margin-top: 8.5px; text-shadow: 0px 0px 1px black"></i></a>
+
+            </div>
+
+            <div style="float: right; margin-right: 100px;">
+
+                <a href="13.html"><i class="fa fa-angle-right" style="font-size: 30px; margin-top: 8.5px; text-shadow: 0px 0px 1px black"></i></a>
+
+            </div>
+
+            <div id="h">
+
+                <ul id="menu">
+
+                </ul>
+
+            </div>
+
+        </header>
+
+        <section>
+
+            <div class="div-abajo">
+
+                <p>Si estuviste viendo los atributos globales, ID y Class te pueden sonar de algo, pero tal vez no tenías ganas y preferiste pasar (como haría yo), por ello ahora vamos a ver Id y Class, dos atributos que nos permitiran enlazar etiqueta HTML con estilos CSS3</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>Aunque arriba lo haya comentado rapidamente, voy a extenderme más ahora. Los atributos id y class sirven para enlazar etiquetas HTML, como puede ser la etiqueta &lt;img> (Siempre la pongo de ejemplo creo yo), con estilos CSS <br><br> Las dos sirven para lo mismo, pero esa frase está muy incorrecta y muy correcta, verdaderamente sirve para lo mismo, enlazar, pero no lo hacen de la misma manera. <br><br> Antes de explicar que es id y class, debemos de quedarnos con una sencilla, fácil y rapida muestra de la estructura de CSS</p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                NombreDentroDe""DelAtributo {
+                <br><br>
+                propiedad: valor;<br>
+                propiedad: valor;<br>
+                propiedad: valor;<br>
+                <br>
+                }
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>¿Está claro? Quedense con eso, el valor que pusimos dentro de las comillas del atributo id o class (Ahora aprenderemos cual escoger), el corchete de apertura {, las propiedades de diseño que tendrá la etiqueta al ser mostrada al usuario que terminar por <b>";"</b>  , el valor que esta tendrá, y el corchete de cierre }, ¡LISTO!</p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p class="blue" style="font-size:18px;">id=""</p>
+
+                <br>
+
+                <p>El atributo id (Que significa Indentificador) tiene la peculiaridad de que solo puede ser utilizado una vez, por ejemplo... <br><br> Tengo dos tablas, la tabla1 y la tabla2, y le pongo a las dos el mismo id, que es id="tablas", esto estaría ¡MAL DE FATAL!, porque Id solo ha de ser utilizado una sola vez, si quisieramos que las dos tablas utilizaran el mismo estilo, usariamos class="", pero es ya otro tema. En la estructura de CSS, un Id tendría # + nombre, lo que quedaría: <br><br>
+
+                    #NombreDentroDe""DelAtributo {
+                    <br><br>
+                    propiedad: valor;<br>
+                    propiedad: valor;<br>
+                    propiedad: valor;<br>
+                    <br>
+                    }
+
+                </p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p class="blue" style="font-size:18px;">class=""</p>
+
+                <br>
+
+                <p>El atributo class (Que significa Clasese) a diferencia de Id, puede poner el mismo valor de class en muchas etiquetas, puedo poner a tabla1 y tabla2 el mismo estilo, y si quiero no solo puedo poner class="tabla1" sino también puedes poner dos valores en el mismo class, quedaría así class="tabla1 gris" así el navegador buscará en el archivo .css los estilos que lleven de nombre: tabla1 y gris. En la estructura del archivo CSS, un class tendría . + nombre, lo que quedaría: <br><br>
+
+                    .NombreDentroDe""DelAtributo {
+                    <br><br>
+                    propiedad: valor;<br>
+                    propiedad: valor;<br>
+                    propiedad: valor;<br>
+                    <br>
+                    }
+
+                </p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>CSS es nuevo para tí, igual que un día lo fue para mi, por ello lo mejor será que veamos la estructura de un archivo .css que tenga dos id y dos class. No vamos a poner las propiedades y valores, para que no se asusten ;)</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>#tabla1 {
+                    <br><br>
+                    propiedad: valor;<br>
+                    propiedad: valor;<br>
+                    propiedad: valor;<br>
+                    <br>
+                    }
+                    <br><br>   
+                    .gris {
+                    <br><br>
+                    propiedad: valor;<br>
+                    propiedad: valor;<br>
+                    propiedad: valor;<br>
+                    <br>
+                    }
+
+                    #tabla2 {
+                    <br><br>
+                    propiedad: valor;<br>
+                    propiedad: valor;<br>
+                    propiedad: valor;<br>
+                    <br>
+                    }
+                    <br><br>   
+                    .izquierda {
+                    <br><br>
+                    propiedad: valor;<br>
+                    propiedad: valor;<br>
+                    propiedad: valor;<br>
+                    <br>
+                    }</p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>Puedes ponerlo como quieras, un id arriba o un class abajo, donde sea, eso no importa.</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>A partir de ahora en cada página tendremos lo que llamaré <br><br><b>LA PROPIEDAD SORPRESA</b><br><br>Así mientras vamos aprendiendo HTML podremos encontrar unas páginas con estilos, esten atentos ya que aparecen en recuadros azules como las adventencias :)</p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>Y ahora pasemos a la acción, empecemos a enseñarle al usuario nuestra web, y vayamos a la etiqueta &lt;body></p>
+
+            </div>
+
+            <div class="blue-background">
+
+                <a href="13.html" class="margin2"><img class="img-center" src="../img/flechaderecha.png" alt="" ></a>
+
+            </div>
+
+        </section>
+
+        <script src="../jquery/jquery.js"></script>
+        <script src="menu/jquery.slicknav.js"></script>
+        <script type="text/javascript">
+
+            $(document).ready(function(){
+
+                $("#menu").load( "menu.html", function() {
+                    $('#menu').slicknav({
+                        label : '',
+                        prependTo:'#h'
+                    });
+                });
+
+            });
+
+        </script>
+
+    </body>
+
+</html>

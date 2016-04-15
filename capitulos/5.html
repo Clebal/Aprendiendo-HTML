@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+
+        <meta charset="utf-8">
+        <title>Aprendiendo HTML</title>
+        
+        <meta name="author" content="Sukafe">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <!-- Estilos -->
+
+        <link rel="stylesheet" href="../css/style2.css">
+        <link rel="stylesheet" href="../css/basic.css">  
+
+        <!-- Iconos -->
+
+        <link rel="stylesheet" href="../css/font-awesome.css">
+
+        <!-- Slicknav -->
+
+        <link rel="stylesheet" href="menu/slicknav.css">
+        <script src="../jquery/modernizr.min.js"></script>
+
+        <script src="../jquery/jquery.js"></script>
+        
+        <!-- Cuestionario -->
+
+        <script>
+
+            <!--Ocultar código
+
+            var pregunta1 = "0"; 
+
+            function respuesta1(valor) 
+            {pregunta1 = valor};             
+            // -->
+
+        </script>
+
+    </head>
+
+    <body>
+
+        <header class="blue-background header">
+
+            <progress id="progress" value="10" max="100"></progress>
+
+            <div style="float: left; margin-left: 100px;">
+
+                <a href="4.html"><i class="fa fa-angle-left" style="font-size: 30px; margin-top: 8.5px; text-shadow: 0px 0px 1px black"></i></a>
+
+            </div>
+
+            <div style="float: right; margin-right: 100px;">
+
+                <a href="6.html"><i class="fa fa-angle-right" style="font-size: 30px; margin-top: 8.5px; text-shadow: 0px 0px 1px black"></i></a>
+
+            </div>
+
+            <div id="h">
+
+                <ul id="menu">
+
+                </ul>
+
+            </div>
+
+        </header>
+
+        <section>
+
+            <div class="div-abajo">
+
+                <p>Ya hemos visto como se ha desarrollado HTML desde que se creó en 1991 hasta hoy día. Ahora entraremos en el codigo empezando por la declaración del &lt;!DOCTYPE html></p>
+
+            </div>
+
+            <div class="blue-background">
+                <br>
+                <span class="icon" style="color: white; margin: 25px; font-size: 35px; display: inline;"><i style=" padding: 5px;" class="fa fa-exclamation-triangle"></i></span>
+                <p style="color: white; margin-left: 25px; margin-right: 25px;">Por norma general, el archivo principal de toda página web es el index.html, es algo que algunos programadores ya experimentados pueden saber pero que a los nuevos les conviene saber. Claramente al documento principal puedes llamar hola.html ó buenosdias.html, pero lo que todo el mundo hace es nombrar ese archivo como index.html<br><br> </p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p style="color: #5a5a5a; font-size: 27px;" class="text-center"><b><span style="color: #0093d5;">¿</span>&lt;!DOCTYPE html><span style="color: #0093d5;">?</span></b></p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>&lt;!DOCTYPE html> no es una etiqueta, como dije arriba era una declaración, ¿una declaración para qué? para decirle al navegador que voy a utilizar HTML5 o HTML 4.01 o HTML 3.2. Si haceis la prueba y os saltais el &lt;!DOCTYPE html> seguira viendose la web, pero tal vez sea una web pequeña, en cuanto empieces a escribir etiquetas de HTML5 y atributos creados en esta versión, veras que tu web no es igual.</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p class="blue" style="font-size:23px;">¿Por qué?</p>
+
+                <br>
+
+                <p>Porque determina qué versión de HTML utiliza el documento, y esa es una información clave que necesitan los navegadores u otras herramientas que procesen el documento.</p>
+
+                <br>
+
+                <p>_______________________</p>
+
+                <br>
+
+                <p>Un ejemplo muy claro de herramienta es el validador de etiquetas que la W3C nos proporciona a los desarrolladores que detecta el doctype (Vamos a llamarlo así para acortar) y valida si el cogido está bien escrito según las nuevas normas que surgén.</p>
+
+                <br>
+
+                <p>_______________________</p>
+
+                <br>
+
+                <p>Lo más importate de todo, que nos importa a todos los desarrolladores, es que si ponemos el doctype nuestra web será más rapida porque le quitamos trabajo al navegador (Que es el que interpreta el codigo) diciendole directamente que esto es HTML5 sin que se tenga que marear la cabeza.</p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>Hay muchas formas de declarar el doctype, desde los comienzos de HTML se utilizaba un doctype largo que precisaba la declaración de un archivo .dtd (Es un archivo que declara las etiquetas y su contenido), este doctype era algo así:</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p style="font-size: 15px;">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+                </p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>Ver solo que para empezar a escribir código HTML se necesita esto, hace que tanto desarrolladores como los que quieren aprender a desarrollar se les quite las ganas, por eso muchos IDE (Es el programa donde se escribe el codigo, lo veremos más adelante) incluian la opción de generar automaticamente el doctype. <br><br> La pregunta del millón... </p>
+
+            </div>
+
+            <form name="cuestionario">
+
+                <div class="div-arriba">
+
+                    <p>¿A qué versión de HTML pertenece el doctype de arriba?</p><br>
+
+                    <input type="radio" name="pregunta1" value="A" onclick="respuesta1('A')">&nbsp;A. HTML 4.01<br>
+                    <input type="radio" name="pregunta1" value="B" onclick="respuesta1('B')">&nbsp;B. HTML 4.01 (Strict)<br> 
+                    <input type="radio" name="pregunta1" value="C" onclick="respuesta1('C')">&nbsp;C. HTML 4.01 (Transitional)<br> 
+                    <br>
+                    <div class="text-center margintop-2 marginbottom-2">
+
+                        <input class="div-center btn caja" type="button" style="font-size: 17px;" onclick="examinar()" value="Comprobar">
+
+                    </div>
+
+
+                </div>
+
+                <script>
+                    <!--Ocultar código
+                    function examinar() 
+                    { 
+                        puntuacion=0; 
+                        nocontesta=0; 
+                        contestadas=0; 
+                        puntosmaximos=0;
+
+                        if(pregunta1!= "0" )
+                        {
+                            contestadas=contestadas+1
+                            puntosmaximos=puntosmaximos+100
+                            if(pregunta1 == "A") {puntuacion=puntuacion+0}
+                            if(pregunta1 == "B") {puntuacion=puntuacion+100}
+                            if(pregunta1 == "C") {puntuacion=puntuacion+0}
+                        }
+                        else {nocontesta=nocontesta+1}
+
+                        if(puntuacion==100) 
+                        {
+                            mensaje="¡Acertaste!"} 
+
+                        if(puntuacion==0)
+                        {    
+                            mensaje="¡Fallaste!"} 
+
+                        if(contestadas==0)
+                        {
+                            mensaje="Contesta anda..."}
+
+                        alert(mensaje)
+
+
+                    }
+                    // -->
+
+                </script>
+
+            </form>
+
+            <div class="div-abajo">
+
+                <p>Nosotros programaremos en HTML5, no es HTML 4.01 ni ninguna otra especificación, por lo que aprenderemos solamente el doctype de esta versión.</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>Las versiones anteriores de HTML5 como HTML 4.01 (Que es justo la versión anterior) estaba basada en SGML por lo que hacía obligatorio declarar el archivo .dtd. HTML5 cambia las cosas y al no estar basada en SGML no hace necesario declarar un doctype tan basto, por lo que se reduce a un simple:</p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p class="text-center" style="font-size:32px;">&lt;!DOCTYPE html></p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>Es fácil, ¿no? Ahora empezar a desarrollar solo nos llevará unos segundos, e inmediatamente podremos empezar a programar por la siguiente etiqueta:</p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p class="text-center" style="font-size:32px;">&lt;html>&lt;/html></p>
+
+            </div>
+
+            <div class="blue-background">
+
+                <a href="6.html" class="margin2"><img class="img-center" src="../img/flechaderecha.png" alt="" ></a>
+
+            </div>
+
+        </section>
+
+        <script src="../jquery/jquery.js"></script>
+        <script src="menu/jquery.slicknav.js"></script>
+        <script type="text/javascript">
+
+            $(document).ready(function(){
+
+                $("#menu").load( "menu.html", function() {
+                    $('#menu').slicknav({
+                        label : '',
+                        prependTo:'#h'
+                    });
+                });
+
+            });
+
+        </script>
+
+
+    </body>
+
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+
+        <meta charset="utf-8">
+
+        <title>Aprendiendo HTML</title>
+
+        <meta name="author" content="Sukafe">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <!-- Estilos -->
+
+        <link rel="stylesheet" href="../css/style2.css">
+        <link rel="stylesheet" href="../css/basic.css">  
+
+        <!-- Iconos -->
+
+        <link rel="stylesheet" href="../css/font-awesome.css">
+
+        <!-- Slicknav -->
+
+        <link rel="stylesheet" href="menu/slicknav.css">
+        <script src="../jquery/modernizr.min.js"></script>
+
+    </head>
+
+    <body>
+
+        <header class="blue-background header">
+
+            <progress id="progress" value="50" max="100"></progress>
+
+            <div style="float: left; margin-left: 100px;">
+
+                <a href="18.html"><i class="fa fa-angle-left" style="font-size: 30px; margin-top: 8.5px; text-shadow: 0px 0px 1px black"></i></a>
+
+            </div>
+
+            <div style="float: right; margin-right: 100px;">
+
+                <a href="21.html"><i class="fa fa-angle-right" style="font-size: 30px; margin-top: 8.5px; text-shadow: 0px 0px 1px black"></i></a>
+
+            </div>
+
+            <div id="h">
+
+                <ul id="menu">
+
+                </ul>
+
+            </div>
+
+        </header>
+
+        <section>
+
+            <div class="div-arriba">
+
+                <p>Antes hemos tardado muy poco en ver la etiqueta &lt;wbr> pero ahora vamos a hablar de muchas etiquetas (Son bastantes jaja) que sirven básicamente para darle estilo a un texto, ya sea ponerlo en cursiva, negrita o subrayarlo, vamos por las dos primeras.</p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p style="font-size: 35px; text-align: center">&lt;b>&lt;/b> y &lt;strong>&lt;/strong></p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>Las dos etiquetas sirven para poner en <b>negritra</b> el texto que esté dentro de la etiqueta de inicio y de cierre. <br><br> &lt;b>Sukafe :)&lt;/b> <br><br> La etiqueta &lt;strong> sin embargo ayuda a que cuando alguien busque por Google, encuentre nuestra página primero. Por ejemplo:</p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>Si tengo una página que vende móviles y pongo en la etiqueta &lt;strong> palabras como: Bienvenido, contacto, envio. Pues alguien cuando busque en Google una página de venta de moviles, no aparecerá nuestra página primero, pero si ponemos: vender, moviles, calidad, precio bajo. Entonces sí :) Google tiene en cuenta las palabras (una o más) que esten en la etiqueta &lt;strong>.</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p style="font-size: 35px; text-align: center">&lt;em>  &lt;i>   &lt;dfn>   &lt;var>   &lt;cite></p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>No os voy a engañar, las cinco son iguales a la hora de ser mostradas al usuario que visita nuestra web, basicamente, todas las palabras que esten entre esas etiquetas (&lt;i>Sukafe&lt;/i> Por ejemplo) tendrán este código CSS:</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>font-style: italic;</p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>La diferencia reside basicamente en el valor que tienen, al igual que &lt;strong> y &lt;b>, hacen lo mismo pero no valen igual ya que el navegador lo interpretará de una forma. <br><br> <b>&lt;em></b> Se usa para darle enfasis a un texto poniendolo en cursiva. <br><br> <b>&lt;i></b> se puede utilizar para indicar un término técnico, una frase de otra lengua, un pensamiento, o el nombre de algo, etc. <br><br> <b>&lt;dfn></b> indica una definición. <br><br> <b>&lt;cite></b> se utiliza para escribir la cita. <br><br> <b>&lt;var></b> contiene texto que supone ser la instancia de una variable o el argumento de un programa. El contenido de este elemento es usualmente mostrado por los agentes de usuario con un estilo de fuente itálica. (Esta etiqueta es bien extraña eh).</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p style="font-size: 35px; text-align: center">&lt;kbd>  &lt;samp>   &lt;code></p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>De nuevo más de lo mismo... ¡Visualmente son lo mismo! ;) Estas etiquetas utilizan este código CSS:</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>font-family: monospace;</p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p><b>&lt;samp></b> se utiliza para un código que sería el producido por un programa del ordenador. <br><br> <b>&lt;kbd></b> se utiliza para un código introducido por el teclado. <br><br> <b>&lt;code></b> se utiliza para escribir las lineas de código ya sea HTML, C, el que sea :)</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p style="font-size: 35px; text-align: center">&lt;mark></p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>La etiqueta <mark>&lt;mark></mark> se utiliza para destacar un texto poniendolo como subrayado con fluorescente. Muchos de los que lo utilizamos para estudiar lo conocerán muy bien ;) Este es su código CSS:</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>background-color: yellow;<br>
+                    color: black;</p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>Todavía no hemos terminado pero si seguimos la página se nos va a hacer un poco larga, por ello seguimos en la siguiente página con las últimas etiquetas para darle estilo a un texto ;)</p>
+
+            </div>
+
+            <div class="blue-background">
+
+                <a href="21.html" class="margin5"><img class="img-center" src="../img/flechaderecha.png" alt="" ></a>
+
+            </div>
+
+        </section>
+
+        <script src="../jquery/jquery.js"></script>
+        <script src="menu/jquery.slicknav.js"></script>
+        <script type="text/javascript">
+
+            $(document).ready(function(){
+
+                $("#menu").load( "menu.html", function() {
+                    $('#menu').slicknav({
+                        label : '',
+                        prependTo:'#h'
+                    });
+                });
+
+            });
+
+        </script>
+
+    </body>
+
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+
+        <meta charset="utf-8">
+        <title>Aprendiendo HTML</title>
+        <meta name="description" content="">
+        <meta name="author" content="Sukafe">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <!-- Estilos -->
+
+        <link rel="stylesheet" href="../css/style2.css">
+        <link rel="stylesheet" href="../css/basic.css">  
+
+        <!-- Iconos -->
+
+        <link rel="stylesheet" href="../css/font-awesome.css">
+
+        <!-- Slicknav -->
+
+        <link rel="stylesheet" href="menu/slicknav.css">
+        <script src="../jquery/modernizr.min.js"></script>
+
+    </head>
+
+    <body>
+
+        <header class="blue-background header">
+
+            <progress id="progress" value="20" max="100"></progress>
+
+            <div style="float: left; margin-left: 100px;">
+
+                <a href="9.html"><i class="fa fa-angle-left" style="font-size: 30px; margin-top: 8.5px; text-shadow: 0px 0px 1px black"></i></a>
+
+            </div>
+
+            <div style="float: right; margin-right: 100px;">
+
+                <a href="11.html"><i class="fa fa-angle-right" style="font-size: 30px; margin-top: 8.5px; text-shadow: 0px 0px 1px black"></i></a>
+
+            </div>
+
+            <div id="h">
+
+                <ul id="menu">
+                    
+
+                </ul>
+
+            </div>
+
+        </header>
+
+        <section>
+
+            <div class="div-arriba">
+
+                <p>Todavia no vamos a entrar en las hojas de estilos en cascada (CSS por sus siglas en Ingles, Cascading Style Sheets), se que tal vez tienes ganas pero tendras que esperar a la siguiente página para empezar a aprender, lo siento ;)</p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>Ahora veremos como enlazar un documento externo con nuestro archivo HTML (El index.html es este caso). Podemos enlazar muchas cosas mediante la etiqueta &lt;link>, pero nosotros estamos viendo lo básico para construir una web, por lo que aprenderemos a enlazar un archivo .css (Archivo de estilo) con nuestro archivo .html (Claramente los llamamos .css y .html por la extensión del archivo que se genera)</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>Las estructura general de la etiqueta &lt;link> es así:</p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p style="font-size: 25px;" class="text-center">&lt;link rel="stylesheet" type="text/css" href="css/style.css"></p>
+
+            </div>
+
+            <div class="blue-background">
+                <br>
+                
+                <span class="icon" style="color: white; margin: 25px; font-size: 35px; display: inline;"><i style=" padding: 5px;" class="fa fa-exclamation-triangle"></i></span>
+                
+                <p style="color: white; margin-left: 25px; margin-right: 25px;">Supongamos que hemos creado la carpeta "Sukafe HTML", dentro tenemos dos carpetas "css" e "img" (Esta es la estructura básica de una web), en la carpeta "css" se encontraran los estilos y la "img" las imagenes (Ya veremos más adelante como utilizar imagenes). <br><br> Vemos en el ejemplo que para seleccionar el archivo style.css que está dentro de la carpeta "css" debemos escribir css + / + nombrearchivo.css (en este caso style.css). Es sencillo ¿no? <br><br> Si tuvieramos el archivo index.html dentro de una carpeta hariamos lo siguiente... <br><br> .. + / + css + / nombrearchivo.css <br><br> (Espero que no haya que aclarar que los + no se ponen ;) Los dos puntos quiere decir que vaya una carpeta atras, si el archivo index.html está en la carpeta "hola" pues ira para atras situandose en la carpeta principal, luego entrará en la carpeta llamada "css" y buscará el archivo nombrearchivo.css <br><br> </p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>Vemos tres atributos, el atributo rel="", el type="" y href="". <br><br> El atributo rel="" y el type="" indican casi lo mismo, que el archivo que estamos enlazando es de estilos, pero se usan para que nuestra web sea compatible con antiguas versiones de algunos navegadores (Internet Explorer) que aun siguen siendo utilizadas. El atributo rel="" es obligatorio Sí o Sí, podemos ver los diferentes tipos de valores que puede tomar rel="" en la página de W3Schools. Como dije antes aquí veremos lo básico y  eso es algo más avanzado.</p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>Una vez que hemos enlazado el archivo .css a nuestro index.html podemos empezar, ahora sí, a aprender CSS3 para darle estilo a HTML5.</p>
+
+            </div>
+
+            <div class="blue-background">
+
+                <a href="11.html" class="margin2"><img class="img-center" src="../img/flechaderecha.png" alt="" ></a>
+
+            </div>
+
+        </section>
+
+        <script src="../jquery/jquery.js"></script>
+        <script src="menu/jquery.slicknav.js"></script>
+        <script type="text/javascript">
+
+            $(document).ready(function(){
+
+                $("#menu").load( "menu.html", function() {
+                    $('#menu').slicknav({
+                        label : '',
+                        prependTo:'#h'
+                    });
+                });
+
+            });
+
+        </script>
+
+    </body>
+
+</html>

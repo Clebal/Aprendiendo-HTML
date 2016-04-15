@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+
+        <meta charset="utf-8">
+
+        <title>Aprendiendo HTML</title>
+
+        <meta name="author" content="Sukafe">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <!-- Estilos -->
+
+        <link rel="stylesheet" href="../css/style2.css">
+        <link rel="stylesheet" href="../css/basic.css">  
+
+        <!-- Iconos -->
+
+        <link rel="stylesheet" href="../css/font-awesome.css">
+
+        <!-- Slicknav -->
+
+        <link rel="stylesheet" href="menu/slicknav.css">
+        <script src="../jquery/modernizr.min.js"></script>
+
+    </head>
+
+    <body>
+
+        <header class="blue-background header">
+
+            <progress id="progress" value="1" max="100"></progress>
+
+            <div style="float: left; margin-left: 100px;">
+
+                <a href="../index.html"><i class="fa fa-angle-left" style="font-size: 30px; margin-top: 8.5px; text-shadow: 0px 0px 1px black"></i></a>
+
+            </div>
+
+            <div style="float: right; margin-right: 100px;">
+
+                <a href="3.html"><i class="fa fa-angle-right" style="font-size: 30px; margin-top: 8.5px; text-shadow: 0px 0px 1px black"></i></a>
+
+            </div>
+
+            <div id="h">
+
+                <ul id="menu">
+
+                </ul>
+
+            </div>
+
+        </header>
+
+        <section>
+
+            <div class="blue-background">
+
+                <br>
+
+                <span class="icon" style="color: white; margin: 25px; font-size: 35px; display: inline;"><i style=" padding: 5px;" class="fa fa-exclamation-triangle"></i></span>
+                <br>
+                <p style="color: white; margin-left: 25px; margin-right: 25px;"> Rogamos que nos escriban en las valoraciones de la app que piden para mejorar la app. <br><br> Gracias :) <br><br> Si quieren escribirnos con dudas o consejos no dudes en enviarnos un email a: <br><br> <b>contacto@sukafe.com <br><br></b></p>
+
+            </div>
+
+            <div class="div-arriba" id="numero2" >
+
+                <p>HTML es un lenguaje de marcación que se utiliza como estandar para la elaboración de páginas web.</p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p class="blue"  style="font-size:23px;">¿HTML no es un lenguaje de programación?</p>
+
+                <br>
+
+                <p>No, en el lenguaje de programación se escriben instrucciones que posteriormente serán interpretadas por un compilador,                               mientras que en uno de marcado, como HTML, se escriben "marcas" o "etiquetas" que un explorador entiende. </p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>HTML solo proporciona la estructura, para añadirle diseño se usa CSS, la cual veremos en su tercera versión, CSS3.</p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>Ahora que ya sabes lo más básico de HTML, decide si de verdad quieres empezar a descubrir, en la tarjeta de abajo veras lo que                       aprenderas aquí.</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>En este curso app aprenderas la sintaxis básica de HTML5, el futuro estandar de HTML; la historia de HTML, añadir diseño a una                       web con CSS3 y como empezar a desarrollar.</p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p class="text-center">Para empezar pulsa aquí</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p class="text-center">&darr;</p>
+
+            </div>
+
+            <div class="blue-background">
+
+                <a href="3.html" class="margin2"><img class="img-center" src="../img/flechaderecha.png" alt="" ></a>
+
+            </div>
+
+        </section>
+
+        <script src="../jquery/jquery.js"></script>
+        <script src="menu/jquery.slicknav.js"></script>
+        <script type="text/javascript">
+
+            $(document).ready(function(){
+
+                $("#menu").load( "menu.html", function() {
+                    $('#menu').slicknav({
+                        label : '',
+                        prependTo:'#h'
+                    });
+                });
+
+            });
+
+        </script>
+
+    </body>
+
+</html>

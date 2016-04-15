@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+
+        <meta charset="utf-8">
+
+        <title>Aprendiendo HTML</title>
+
+        <meta name="author" content="Sukafe">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <!-- Estilos -->
+
+        <link rel="stylesheet" href="../css/style2.css">
+        <link rel="stylesheet" href="../css/basic.css">  
+
+        <!-- Iconos -->
+
+        <link rel="stylesheet" href="../css/font-awesome.css">
+
+        <!-- Slicknav -->
+
+        <link rel="stylesheet" href="menu/slicknav.css">
+        <script src="../jquery/modernizr.min.js"></script>
+
+    </head>
+
+    <body>
+
+        <header class="blue-background header">
+
+            <progress id="progress" value="28" max="100"></progress>
+
+            <div style="float: left; margin-left: 100px;">
+
+                <a href="13.html"><i class="fa fa-angle-left" style="font-size: 30px; margin-top: 8.5px; text-shadow: 0px 0px 1px black"></i></a>
+
+            </div>
+
+            <div style="float: right; margin-right: 100px;">
+
+                <a href="15.html"><i class="fa fa-angle-right" style="font-size: 30px; margin-top: 8.5px; text-shadow: 0px 0px 1px black"></i></a>
+
+            </div>
+
+            <div id="h">
+
+                <ul id="menu">
+
+                </ul>
+
+            </div>
+
+        </header>
+
+        <section>
+
+            <div class="blue-background">
+
+                <br>
+
+                <a href="css/display.html"><p class="text-center" style="font-size: 25px;"><b>PROPIEDAD SORPRESA</b></p></a>
+                <br>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>Después de crear un encabezado para nuestra web que es muy muy importante, pasaremos a la segunda parte de la estructura básica que debe tener una web, tal vez esta etiqueta no nos haga falta siempre siempre, pero hay que saberlo :) Estamos hablando de...</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p class="text-center" style="font-size:30px;">&lt;nav></p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>¡Sí! La etiqueta menú, navegador, o como quieran llamarla, sirve para (obviamente) crear un menu con opciones enlazadas a otras páginas dentro de tu misma web u otras.</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>Dentro de la etiqueta &lt;nav> deberemos de poner obligatoriamente una etiqueta para enlazar texto a otra página que es &lt;a>, y opcionalmente podemos crear listas de elementos con tres etiquetas: &lt;ul>, &lt;li>, &lt;ol>. <br> Vamos a ello ;)</p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p class="blue" style="font-size:18px;">&lt;ul> y &lt;ol></p>
+
+                <br>
+
+                <p>La etiqueta &lt;ul> le indica al navegador que vamos a realizar una lista del tipo desornada (• Algo • Algo • Algo), y la etiqueta &lt;ol> indica una lista ordenada (1. Algo 2. Algo 3. Algo). <br><br> Para definir un elemento dentro de &lt;ul> u &lt;ol> lo haremos con &lt;li></p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p class="blue" style="font-size:18px;">&lt;li></p>
+
+                <br>
+
+                <p>&lt;li> define un elemento dentro de una lista desornada, por lo que aparecerá (según el navegador puede aparecer diferente) al lado de la palabra que va dentro del &lt;li> un simbolo como este: • <br><br>
+
+                    &lt;ul><br><br>
+                    &nbsp;&nbsp;&lt;li>Cosas bonitas&lt;/li><br><br>
+                    &nbsp;&nbsp;&lt;li>Cosas bonitas&lt;/li><br><br>
+                    &nbsp;&nbsp;&lt;li>Cosas bonitas&lt;/li><br><br>
+                    &nbsp;&nbsp;&lt;li>Cosas bonitas&lt;/li><br><br>
+                    &lt;/ul>    <br><br>
+
+                    Esto quedaría así:
+
+                    <br><br>
+
+                <ul>
+
+                    <li>Cosas bonitas</li>
+                    <li>Cosas bonitas</li>
+                    <li>Cosas bonitas</li>    
+                    <li>Cosas bonitas</li>
+
+                </ul>
+
+                <br><br>
+
+                Como en este caso no sale ningun redondel que nos indique que es una lista (desordenada en este caso) por lo que podemos utilizar una propiedad css para mostrar ese redondel... list-style-type: circle;
+                <br><br>
+                <ul>
+
+                    <li style="list-style-type: circle;">Cosas bonitas</li>
+                    <li style="list-style-type: circle;">Cosas bonitas</li>
+                    <li style="list-style-type: circle;">Cosas bonitas</li>    
+                    <li style="list-style-type: circle;">Cosas bonitas</li>
+
+                </ul>
+
+                <br><br>
+
+                Para crear una lista ordenada solo debes cambiar el &lt;ul> por &lt;ol> y listo :)
+
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>Por último y logicamente habrá que aprender a crear enlaces a otras páginas y eso lo haremos con la etiqueta &lt;a></p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p class="blue" style="font-size:18px;">&lt;a></p>
+
+                <br>
+
+                <p>Es una de esas etiquetas que nacieron con HTML y que van ligadas a él, ademas de que es una de las más básicas. Esta etiqueta lo que hace es enlazar un texto, imagen, parte de una lista, etc, y que al pulsar esa cosa se te diriga a la página escogida. Para ello vamos a utilizar el atributo href="". <br><br> Quedaría algo así: <br><br>
+
+                    &lt;a href="contacto.html">Contacto&lt;/a>
+                    <br><br>
+                    Lo que quieras enlazar tiene que meterlo dentro de la etiqueta, menos si quieres enlazar un &lt;li> ya que debes de poner el enlace dentro del &lt;li> y no al reves, para que quede algo así:
+                    <br><br>
+                    &lt;li> <br> &lt;a href="contacto.html"><br>Contacto&lt;/a> <br>&lt;/li>
+
+                </p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>Pasamos ahora a ver las partes más grandes que ocupan la mayor parte de una web, que son &lt;section>, &lt;article>, &lt;aside>. Aunque ahora mismo te suena a chino, lo verás con detalle en la siguiente página :) </p>
+
+            </div>
+
+            <div class="blue-background">
+
+                <a href="15.html" class="margin5"><img class="img-center" src="../img/flechaderecha.png" alt="" ></a>
+
+            </div>
+
+        </section>
+
+        <script src="../jquery/jquery.js"></script>
+        <script src="menu/jquery.slicknav.js"></script>
+        <script type="text/javascript">
+
+            $(document).ready(function(){
+
+                $("#menu").load( "menu.html", function() {
+                    $('#menu').slicknav({
+                        label : '',
+                        prependTo:'#h'
+                    });
+                });
+
+            });
+
+        </script>
+
+    </body>
+
+</html>

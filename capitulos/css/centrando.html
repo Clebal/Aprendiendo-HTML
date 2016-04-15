@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+
+        <meta charset="utf-8">
+        <title>Aprendiendo HTML</title>
+
+        <meta name="author" content="Sukafe">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <!-- Estilos -->
+
+        <link rel="stylesheet" href="../../css/style2.css">
+        <link rel="stylesheet" href="../../css/basic.css">  
+
+        <!-- Iconos -->
+
+        <link rel="stylesheet" href="../../css/font-awesome.css">
+
+        <!-- Slicknav -->
+
+        <link rel="stylesheet" href="../menu/slicknav.css">
+        <script src="../../jquery/modernizr.min.js"></script>
+
+    </head>
+
+    <body>
+
+        <header class="blue-background header">
+
+            <div style="float: right; margin-right: 150px;">
+
+                <a href="javascript:history.back();"><i class="fa fa-angle-left" style="font-size: 30px; margin-top: 8.5px; text-shadow: 0px 0px 1px black"></i></a>
+
+            </div>
+
+            <div id="h">
+
+                <ul id="menu">
+
+                </ul>
+
+            </div>
+
+        </header>
+
+        <section>
+            <div class="div-abajo">
+
+                <p class="text-center" style="font-size:40px;">Centrar con CSS3</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>En el anterior apartado de Propiedades Sorpresa ya vimos como centrar un texto, pero... ¿qué pasa si quiero centrar una imagen o un div?</p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>Antes de que HTML5 llegará, existía una etiqueta que hacía muy sencilla la tarea de centrar cualquiera, cosa, esta era...</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p class="text-center" style="font-size:30px;">&lt;center></p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>Simplemente tenías que meter dentro de la etiqueta &lt;center> todo lo que querías centrar y listo, todo estaba centrado, pero a partir de HTML5 esta etiqueta se ha borrado a favor de usar CSS3 para centrar texto, en esta página te enseñamos como ;)</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p class="text-center" style="font-size:30px;">Centrar un div, section, article y aside</p>
+                <br>
+                <aside style="width: 50px; height: 50px; background: black; margin-left: auto; margin-right: auto;"></aside>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>Cualquiera de los contenedores que aparecen arriba se pueden centrar con el siguiente código CSS</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>
+
+                    .centrar{<br>
+
+                    &nbsp;&nbsp;&nbsp;margin-left: auto;<br>
+                    &nbsp;&nbsp;&nbsp;margin-right: auto;<br>
+                    &nbsp;&nbsp;&nbsp;display: block;
+                    <br>
+                    }
+
+
+                </p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>Margin es una propiedad que genera un margen, existe 5 formas de determinar el margen. Podemos poner margin: 5px, y que el margen sea de 5px arriba, abajo, derecha e izq, o podemos poner margin-top (margen de arriba), margin-bottom (margen de abajo), margin-right (Margen de la derecha) y margin-left (Margen de la izq). Aunque también podemos determinar el valor de cada margen en la propiedad margin, haciendo lo siguiente:</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>margin: 10px 20px</p><br>
+                <p>Esto indica que habrá 10px de margenes verticales y 20px de margenes horizontales</p><br><br>
+
+                <p>margin: 10px 20px 30px</p><br>
+                <p>Esto indica que habrá 10px de margen superior, 20px de margenes horizontales y 30px de margen inferior</p><br><br>
+
+                <p>margin: 10px 20px 30px 40px</p><br>
+                <p>Esto indica que habrá 10px de margen superior, 20px de margen derecho, 30px de margen inferior y 40px de margen izquierdo.</p>
+
+            </div>
+
+            <div class="blue-background">
+                <br>
+                <span class="icon" style="color: white; margin: 25px; font-size: 35px; display: inline;"><i style=" padding: 5px;" class="fa fa-exclamation-triangle"></i></span>
+                <p style="color: white; margin-left: 25px; margin-right: 25px;">Siempre el contenedor ya sea div, section, article o aside debe tener la propiedad display:block para que funcione :)<br><br> </p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>Como iba diciendo, las dos etiquetas llevan la propiedad display: block; por defecto, lo que quiere decir que la caja imaginaria que contiene la palabra HTML5 (Como en el ejemplo) va a ocupar todo el espacio posible por lo que ninguna otra etiqueta se puede poner a la derecha de él. Tal vez te preguntes, y si no deberías de empezar a preguntartelo, como es que las barras de menú tipicas para navegar en algunas web suelen se horizontales. Abajo la respuesta ;) </p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p class="text-center" style="font-size:30px;">Centrar una imagen</p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>Para centrar una imagen se utilizan el siguiente código CSS (Esta imagen del gran Tim Beners-Lee está centrada con tal código CSS3):</p>
+
+                <img width="80%" height="260" class="img-center" style="margin-top: 25px; box-shadow: 0px 0px 5px #000;" src="../../img/TimBerners-Lee.jpg" alt="Ejemplo 2">
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>
+
+                    .centrar_imagen{<br>
+
+                    &nbsp;&nbsp;&nbsp;display: block;<br>
+                    &nbsp;&nbsp;&nbsp;margin:auto;  <br>
+
+                    }
+                </p>
+
+            </div>
+
+            <div class="div-arriba">
+
+                <p>¿Ves que es muy fácil? Pues con esos dos estilos puedes puedes centrar casi cualquier elemento, ademas usando text-align: center, que ya lo vimos en un anterior apartado :)</p>
+
+            </div>
+
+            <div class="div-abajo">
+
+                <p>Espero que te haya gustado esta página, pulsa abajo para volver y seguir aprendiendo HTML5 :).</p>
+
+            </div>
+
+            <div class="blue-background">
+
+                <a href="../14.html" class="margin2"><img class="img-center" src="../../img/flechaizq.png" alt="" ></a>
+
+            </div>
+
+        </section>
+
+        <script src="../../jquery/jquery.js"></script>
+        <script src="../menu/jquery.slicknav.js"></script>
+        <script type="text/javascript">
+
+            $(document).ready(function(){
+
+                $("#menu").load( "../menu2.html", function() {
+                    $('#menu').slicknav({
+                        label : '',
+                        prependTo:'#h'
+                    });
+                });
+
+            });
+
+        </script>
+
+    </body>
+
+</html>

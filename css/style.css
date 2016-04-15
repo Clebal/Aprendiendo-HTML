@@ -1,0 +1,64 @@
+@import url('fonts.css');
+
+body {
+    
+    font-family: 'FiraSans';
+
+    
+}
+
+a {
+ 
+    color: white;
+    
+}
+
+article{
+    
+    text-align: center;
+    background-color: #009dff;
+    
+}
+
+.btn{
+ display: inline-block;
+padding: 6px 12px;
+margin-bottom: 0;
+font-size: 14px;
+font-weight: normal;
+line-height: 1.428571429;
+text-align: center;
+white-space: nowrap;
+vertical-align: middle;
+cursor: pointer;
+background-image: none;
+border: 1px solid transparent;
+border-radius: 4px;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+}   
+
+
+.caja{
+color: #fff;
+background-color: #428bca;
+border-color: #357ebd;
+}
+    
+.caja:hover{
+    
+    background-color: #88bd32;
+
+border-color: #88bd32;
+cursor: pointer;
+text-decoration: none;
+    
+}
+
+.caja:active {
+	position:relative;
+	top:1px;
+}
